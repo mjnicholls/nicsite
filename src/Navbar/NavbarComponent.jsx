@@ -57,7 +57,7 @@ const Navbar = (props) => {
   
   return (
     <>
-    <AppBar position="static" sx={{ boxShadow: "none", marginTop: "15px" }}>
+    <AppBar position="static" sx={{ boxShadow: "none", marginTop: "15px", backgroundColor: "white" }}>
       <Container maxWidth="xl" sx={{ backgroundColor: "white" }}>
         <Toolbar disableGutters sx={{ display: "flex", justifyContent: "center"  }}>
           <Box 
