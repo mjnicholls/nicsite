@@ -17,7 +17,7 @@ const containerStyle = {
 
 function App() {
   return (
-    <Router>
+    <Router basename="/">
       <Suspense fallback={<div>Loading...</div>}>
         <div style={containerStyle}>
           <Layout>
