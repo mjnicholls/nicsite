@@ -7,7 +7,7 @@ const Contact = () => {
 
   return (
 
-    <Box sx={{ pl: { sm: 12, xs: 3}, pr: { sm: 12, xs: 2}, pb: { sm: 4, xs: 36 }} }>
+    <Box sx={{ pl: { sm: 12, xs: 3}, pr: { sm: 12, xs: 2}, pb: { sm: 4, xs: 20 }} }>
 
 
 <Box sx={{ display: "flex", justifyContent: "center", pb: { sm: 4, xs: 2} }} pt={4}>
@@ -35,6 +35,18 @@ const Contact = () => {
             Alternatively, call or send a text to 0746 834 5451
     
       </MainText>
+
+      <Box sx={{ display: { xs: "none", sm: "flex" }, justifyContent: "center", mr: 1, pt:4 }} >
+          <img 
+              src="../../../greenlogo.jpg" alt="logo" width="400" height="400"
+          />
+          </Box>
+
+          <Box sx={{ display: { xs: "flex", sm: "none" }, justifyContent: "center", mr: 1, pt:4 }} >
+          <img 
+              src="../../../greenlogo.jpg" alt="logo" width="200" height="200"
+          />
+          </Box>
 
         </Box>
     </Box>

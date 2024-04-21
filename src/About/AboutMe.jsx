@@ -86,10 +86,12 @@ const AboutMe = () => {
               <li>Substance / alcohol misuse</li>
               <li>Loneliness and isolation</li>
               <li>Relationship issues</li>
-              <li>Trauma</li>
               <li>Low self-esteem</li>
-              <li>Suicidal thoughts and self-harm</li>
             </ul>
+          </MainText>
+
+          <MainText pb={2} sx={{ fontSize: { xs: "12px", sm: "16px" } }}>
+          Maybe your issue isn’t on this list? If so, please get in touch to tell me more about yourself, then we can work out if I have the right skills to help you.
           </MainText>
 
           <Box sx={{ display: "flex", justifyContent: "center"}} pt={2} pb={2}>

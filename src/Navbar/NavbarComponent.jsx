@@ -64,7 +64,9 @@ const Navbar = (props) => {
     <AppBar position="static" sx={{ boxShadow: "none", marginTop: "15px" }}>
       <Container maxWidth="xl" sx={{ backgroundColor: "white" }}>
         <Toolbar disableGutters sx={{ display: "flex", justifyContent: "center"  }}>
-          <Box sx={{ display: { xs: "none", sm: "flex" }, mr: 1 }} >
+          <Box 
+          onClick={() => handleNavigation('/home')}
+          sx={{ display: { xs: "none", sm: "flex" }, mr: 1, cursor: "pointer" }} >
           <img 
               src="../../../greenlogo.jpg" alt="logo" width="125px" height="125px"
           />
@@ -130,7 +132,7 @@ const Navbar = (props) => {
               ))}
             </Menu>
           </Box>
-          <Box sx={{ display: { xs: "none", sm: "flex" }, mr: 1 }} >
+          <Box onClick={() => handleNavigation('/home')} sx={{ display: { xs: "none", sm: "flex" }, mr: 1, cursor: "pointer" }} >
           <img 
             src="../../../greenlogo.jpg" alt="logo" width="125px" height="125px"
           />
@@ -149,7 +151,7 @@ const Navbar = (props) => {
           >
             Nicola Kirk Counselling
           </HeaderText>
-          <Box sx={{ display: { xs: "flex", sm: "none" }, mr: 1 }} >
+          <Box onClick={() => handleNavigation('/home')} sx={{ display: { xs: "flex", sm: "none" }, mr: 1, cursor: "pointer" }} >
           <img 
             src="../../../greenlogo.jpg" alt="logo" width="50px" height="50px"
           />

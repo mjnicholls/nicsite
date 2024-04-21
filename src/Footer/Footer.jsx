@@ -21,12 +21,12 @@ const Footer = () => {
        <Box sx={{ backgroundColor: "#eadfe9"}} p={2}>
         <Grid container sx={{ display: "flex", alignItems:"center" }}>
           <Grid item xs={4} sx={{ display: { sm: "flex", xs: "none" }, justifyContent: "center"}}>
-          <img width="150px" alt="bacp logo" src="../../../bacpLogo.png" />
+          <img width="150px" alt="bacp logo" src="../../../BacpLogo.png" />
           </Grid>
 
           <Grid item xs={6} sx={{ display: { sm: "none", xs: "flex" }, justifyContent: "center"}}>
             <Box>
-          <img width="50px" alt="bacp logo" src="../../../bacpLogo.png" />
+          <img width="50px" alt="bacp logo" src="../../../BacpLogo.png" />
             <Text sx={{ fontSize: "8px" }} pt={2}>(c) 2024 Nicola Kirk Counselling</Text>
             </Box>
           </Grid>

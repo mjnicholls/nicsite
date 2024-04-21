@@ -105,7 +105,7 @@ I am registered with the Information Commissioner’s Office [Registration numbe
 <hr style={{ width: { sm: "400px", xs: "20px" }, margin: "auto", marginTop: "40px" }} />
 
 <Text sx={{fontSize: { sm: "19px", xs: "14px" } }} pt={4}>HOW I USE YOUR INFORMATION</Text>
-<Text pt={3} pb={2} sx={{ fontSize: { xs: "12px" } }}>I. INITIAL CONTACT</Text>
+<Text pt={3} pb={2} sx={{ fontSize: { sm: "16px", xs: "12px"  } }}>I. INITIAL CONTACT</Text>
 <MainText sx={{ fontSize: { xs: "12px", sm: "16px" } }} pb={2}>
 When you contact me with an enquiry about my counselling services I will collect information to help me satisfy your enquiry. This will include things like your name, email address and phone number, as well as your reason for seeking counselling. Alternatively, your GP or other health professional may send me your details when making a referral or a parent or trusted individual may give me your details when making an enquiry on your behalf. 
 </MainText>
@@ -113,7 +113,7 @@ When you contact me with an enquiry about my counselling services I will collect
 If you decide not to proceed, I will ensure all your personal data is deleted within one month of your enquiry. If you would like me to delete this information sooner, just let me know. 
 </MainText>
 
-<Text pt={4} pb={2} sx={{ fontSize: { xs: "12px" } }}>II. WHEN YOU ARE ACCESSING COUNSELLING</Text>
+<Text pt={4} pb={2} sx={{ fontSize: { sm: "16px", xs: "12px"  } }}>II. WHEN YOU ARE ACCESSING COUNSELLING</Text>
 <MainText sx={{ fontSize: { xs: "12px", sm: "16px" } }} pb={2}>
 Rest assured that everything you discuss with me is confidential. That confidentiality will only be broken in the following instances: if I believe there is a risk of <b>harm to yourself or others</b>. I reserve the right to break confidentiality if I think that you have become a danger to yourself or other people. I will attempt to discuss this with you and my supervisor first, but this may not always be possible. <b>For legal and ethical reasons</b> I am not bound by confidentiality if in good faith I feel that I can assist in the prevention or detection of a serious crime, this includes safeguarding issues regarding children or vulnerable adults, crimes regarding substantial financial gains and losses, and acts of terrorism.
 </MainText>
@@ -134,13 +134,13 @@ Rest assured that everything you discuss with me is confidential. That confident
   For security reasons I do not retain text messages for more than one month. If there is relevant information contained in a text message I will make a note of it within your counselling records which are stored on an encrypted device. Likewise, any email correspondence will be deleted after one month if it is not important. If necessary I will make a note of it within your counselling records which are stored on an encrypted device.
 </MainText>
 
-<Text pt={4} pb={2} sx={{ fontSize: { xs: "12px" } }}>III. AFTER COUNSELLING HAS ENDED</Text>
+<Text pt={4} pb={2} sx={{ fontSize: { sm: "16px", xs: "12px" } }}>III. AFTER COUNSELLING HAS ENDED</Text>
 
 <MainText sx={{ fontSize: { xs: "12px", sm: "16px" } }}>
 Once counselling has ended a record of our work together will be kept for seven years from the end of our contact with each other, and then securely destroyed. Please note that by law, for accounting and tax purposes, I must keep financial records for six years after the financial year ends.
 </MainText>
 
-<Text pt={4} pb={2} sx={{ fontSize: { xs: "12px" } }}>IV. THIRD-PARTY RECIPIENTS OF PERSONAL DATA</Text>
+<Text pt={4} pb={2} sx={{ fontSize: { sm: "16px", xs: "12px" } }}>IV. THIRD-PARTY RECIPIENTS OF PERSONAL DATA</Text>
 
 <MainText sx={{ fontSize: { xs: "12px", sm: "16px" } }}>
 I will not share your information with any third parties unless:
