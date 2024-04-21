@@ -40,11 +40,11 @@ const Home = () => {
               Confidential, compassionate counselling in Clarkston, near Glasgow and online
               </Text>
               <MainText pb={2} sx={{ fontSize: { sm: "18px", xs: "15px" } }}>
-              On a counselling journey with me, I can help you overcome any blocks holding you back, find solutions to personal and relationship challenges, and work through difficult experiences from your past. I can also help you with issues like depression, anxiety and low self-esteem. 
+              On a counselling journey with me, I aim to work with you to help you overcome any blocks holding you back, find your own solutions to personal and relationship challenges, and explore your emotional world. I can also help you with issues like depression, anxiety and low self-esteem. 
               </MainText>
 
               <MainText pb={2} sx={{ fontSize: { sm: "18px", xs: "15px" } }}>
-              I understand that speaking to a stranger might feel daunting at first. But I offer caring support and a non-judgmental perspective, no matter what you’re facing. 
+              I understand that speaking to a stranger might feel daunting at first, but I offer caring support and a non-judgmental perspective, no matter what you’re facing. 
               </MainText>
 
               <Text sx={{ fontSize: { sm: "20px", xs: "15px" }}} pb={2} pt={2}>
@@ -56,7 +56,7 @@ const Home = () => {
             </Box>
 
               <MainText pb={2} sx={{ fontSize: { sm: "18px", xs: "15px" } }}>
-              I’m Nicola Kirk, a fully qualified, experienced counsellor in Clarkston, near Glasgow southside. 
+              I’m Nicola Kirk, a fully qualified, committed counsellor in Clarkston, near Glasgow southside. 
               </MainText>
 
               <MainText pb={2} sx={{ fontSize: { sm: "18px", xs: "15px" } }}>
