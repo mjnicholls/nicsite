@@ -1,11 +1,8 @@
-// App.js
-
 import React, { Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import BeatLoader from "react-spinners/BeatLoader";
 import Layout from "./components/layout";
-import Home from "./Home/Home"; // Import the Home component
-import Approach from "./Approach/Approach"; // Import the Approach component
+import Home from "./Home/Home";
+import Approach from "./Approach/Approach";
 import AboutMe from "./About/AboutMe";
 import Cost from './Cost/Cost'
 import Contact from "./Contact/Contact";

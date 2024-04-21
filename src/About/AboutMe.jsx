@@ -1,10 +1,7 @@
 import React from "react";
 import { Box, Grid } from "@mui/material";
 import { Text } from "./Styles";
-import { BoxGreen, BoxPurple, BoxPurpleMain, BoxGreenMain } from "./Styles";
 import { MainText } from "../globalStyles";
-import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
-import WorkIcon from "@mui/icons-material/Work";
 import { BookButton } from "../Home/Styles";
 import { useNavigate } from 'react-router-dom';
 
@@ -14,6 +11,7 @@ const AboutMe = () => {
 
   const handleNavigation = (link) => {
     history(link);
+    window.scrollTo(0, 0);
   };
   return (
     <>

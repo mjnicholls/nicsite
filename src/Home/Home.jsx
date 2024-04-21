@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Grid, Button } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import { BookButton, DropCap, MainText } from "./Styles";
 import { Text } from "../Approach/Styles";
 import { useNavigate } from 'react-router-dom';
@@ -10,6 +10,7 @@ const Home = () => {
 
   const handleNavigation = (link) => {
     history(link);
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -40,7 +41,7 @@ const Home = () => {
               Confidential, compassionate counselling in Clarkston, near Glasgow and online
               </Text>
               <MainText pb={2} sx={{ fontSize: { sm: "18px", xs: "15px" } }}>
-              On a counselling journey with me, I aim to work with you to help you overcome any blocks holding you back, find your own solutions to personal and relationship challenges, and explore your emotional world. I can also help you with issues like depression, anxiety and low self-esteem. 
+              On a counselling journey with me, I aim to work with you to help you overcome any blocks holding you back, find your own solutions to personal and relationship challenges, and assist you to explore your emotional world. I can also help you with issues like depression, anxiety and low self-esteem. 
               </MainText>
 
               <MainText pb={2} sx={{ fontSize: { sm: "18px", xs: "15px" } }}>

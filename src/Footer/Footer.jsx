@@ -13,7 +13,9 @@ const Footer = () => {
 
   const handleNavigation = (link) => {
     history(link);
+    window.scrollTo(0, 0);
   };
+
 
   return (
 

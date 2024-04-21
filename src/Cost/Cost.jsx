@@ -2,7 +2,6 @@ import React from "react";
 import { Box } from "@mui/material";
 import { MainText } from "../globalStyles";
 import { Text } from "../About/Styles";
-import { BoxGreen } from "../Approach/Styles";
 
 const Cost = () => {
   return (

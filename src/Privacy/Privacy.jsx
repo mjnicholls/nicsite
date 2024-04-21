@@ -2,17 +2,14 @@ import React from 'react';
 import { Box } from '@mui/material';
 import { MainText } from "../globalStyles";
 import { Text } from "../About/Styles";
-import { BoxPurple } from '../Approach/Styles';
-import { useNavigate } from 'react-router-dom';
-import Button from '@mui/material/Button';
 
 const Privacy = () => {
 
-    const header = "My lawful basis for holding and using your personal information"
+const header = "My lawful basis for holding and using your personal information"
 
   return (
 
-    <Box sx={{ pl: { sm: 12, xs: 3}, pr: { sm: 12, xs: 2}, pb: { sm: 4, xs: 2 }} }>
+    <Box sx={{ pl: { sm: 12, xs: 3 }, pr: { sm: 12, xs: 2}, pb: { sm: 4, xs: 2 }} }>
 
 <Box sx={{ display: "flex", justifyContent: "center", pb: { sm: 4, xs: 2 }}} pt={4}>
 

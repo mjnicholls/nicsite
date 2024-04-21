@@ -156,7 +156,7 @@ pt={{ xs: 3, sm: 6 }} pl={{ xs: 0, sm: 12 }} pr={{ xs: 0, sm: 12 }} pb={{ xs: 6,
 sx={{ display: "flex", justifyContent: "center"}}>
 
 <Grid item xs={8} sx={{ display: { sm: "flex", xs: "none"}, justifyContent: "center"}}>
-<BoxPurpleMain sx={{ padding: "10px 10px 10px 10px" }}>
+<BoxPurpleMain sx={{ padding: "10px 10px 10px 20px" }}>
 <MainText sx={{ fontSize: { xs: "12px", sm: "16px" }}}>
     <p>I am a qualified counsellor and I work within the BACP’s ethical framework, which can be found <a href="https://www.bacp.co.uk/events-and-resources/ethics-and-standards/ethical-framework-for-the-counselling-professions/">here.</a></p>
     <p>
