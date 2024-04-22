@@ -28,7 +28,7 @@ function App() {
               <Route path="/cost" element={<Cost />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/privacy" element={<Privacy />} />
-              <Route path="*" element={<Navigate to="/home" replace />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </Layout>
         </div>

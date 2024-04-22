@@ -36,6 +36,14 @@ const Contact = () => {
     
       </MainText>
 
+      <MainText sx={{ fontSize: { xs: "12px", sm: "22px" } }} pt={3}>
+            
+            You can also book an appointment through <a href="https://www.counselling-directory.org.uk/counsellors/nicola-kirk">Counselling Directory</a> or <a href="https://www.psychologytoday.com/gb/counselling/nicola-kirk-clarkston-sct/1292608">Psychology Today</a>
+    
+      </MainText>
+
+
+
       <Box sx={{ display: { xs: "none", sm: "flex" }, justifyContent: "center", mr: 1, pt:4 }} >
           <img 
               src="../../../greenlogo.jpg" alt="logo" width="400" height="400"
