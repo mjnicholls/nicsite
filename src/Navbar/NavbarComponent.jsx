@@ -14,7 +14,7 @@ import { useNavigate } from 'react-router-dom';
 const pages = [
   {
     title: "Home ",
-    link: "/home",
+    link: "/",
   },
   {
     title: "Is Counselling For Me?",

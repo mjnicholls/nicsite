@@ -27,10 +27,10 @@ function AppRoutes() {
         <div style={containerStyle}>
           <Layout>
             <Routes>
-              <Route path="/home" element={<Home />} />
+              <Route path="/" element={<Home />} />
               <Route path="/approach" element={<Approach />} />
               {/* Add other routes here */}
-              <Route path="*" element={<Navigate to="/home" replace />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </Layout>
         </div>

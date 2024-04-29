@@ -5,7 +5,7 @@ const Home = lazy(() => import("./Home"));
 
 const HOME_ROUTE = [
   {
-    path: "/home",
+    path: "/",
     element: React.createElement(Home),
   },
 ];
