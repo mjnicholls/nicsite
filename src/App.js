@@ -25,7 +25,7 @@ function App() {
         <div style={containerStyle}>
           <Layout>
             <Routes>
-              <Route path="/home" element={<Home />} />
+              <Route path="/" element={<Home />} />
               <Route path="/approach" element={<Approach />} />
               <Route path="/about-me" element={<AboutMe />} />
               <Route path="/cost" element={<Cost />} />
