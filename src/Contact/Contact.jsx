@@ -38,7 +38,13 @@ const Contact = () => {
 
       <MainText sx={{ fontSize: { xs: "12px", sm: "22px" } }} pt={3}>
             
-            You can also book an appointment through <a href="https://www.counselling-directory.org.uk/counsellors/nicola-kirk">Counselling Directory</a> or <a href="https://www.psychologytoday.com/gb/counselling/nicola-kirk-clarkston-sct/1292608">Psychology Today</a>
+            You can also book an appointment through <a href="https://www.counselling-directory.org.uk/counsellors/nicola-kirk" target="_blank" rel="noreferrer" >Counselling Directory</a> or <a href="https://www.psychologytoday.com/gb/counselling/nicola-kirk-clarkston-sct/1292608">Psychology Today</a>
+    
+      </MainText>
+
+      <MainText sx={{ fontSize: { xs: "12px", sm: "22px" } }} pt={3}>
+            
+            You can find me on <a href="https://www.facebook.com/61559247180866/">Facebook</a> and <a href="https://www.instagram.com/nicolakirkcounselling"  target="_blank" rel="noreferrer">Instagram</a>
     
       </MainText>
 

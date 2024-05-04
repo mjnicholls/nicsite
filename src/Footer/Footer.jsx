@@ -6,6 +6,8 @@ import EmailIcon from '@mui/icons-material/Email';
 import LockIcon from '@mui/icons-material/Lock';
 import { useNavigate } from 'react-router-dom';
 import { TextUnderline } from "./Styles";
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 const Footer = () => {
 
@@ -33,8 +35,16 @@ const Footer = () => {
             </Box>
           </Grid>
 
-          <Grid item xs={4} sx={{ display: { sm: "flex", xs: "none" }, justifyContent: "center"}}>
+          <Grid item xs={4} sx={{ display: { sm: "flex", xs: "none" }, justifyContent: "center", flexDirection: "column" }}>
+          <Box sx={{ display: { sm: "flex", xs: "none" }, justifyContent: "center"}}>
+          <a href="https://www.facebook.com/61559247180866/" target="_blank" rel="noreferrer" > <FacebookIcon /></a>
+          <a href="https://www.instagram.com/nicolakirkcounselling"  target="_blank" rel="noreferrer">
+            <InstagramIcon />
+            </a>
+          </Box>
+          <Box pt={1} sx={{ display: { sm: "flex", xs: "none" }, justifyContent: "center"}}>
           <Text>(c) 2024 Nicola Kirk Counselling</Text>
+          </Box>
           </Grid>
 
           <Grid item xs={6} sm={4} sx={{ display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center"}}>

@@ -28,8 +28,12 @@ const Home = () => {
               Confidential, compassionate counselling in Clarkston, near Glasgow and online
               </Text>
           <Box>
+
+          <MainText pb={2} sx={{ fontSize: { sm: "18px", xs: "15px" } }}>
+          <DropCap>O</DropCap>n our counselling journey, I aim to work with you to help you overcome any blocks holding you back, find your own solutions to personal and relationship challenges, and assist you to explore your emotional world. I can also help you with issues like depression, anxiety and low self-esteem. 
+              </MainText>
               <MainText pb={2} sx={{ fontSize: { sm: "18px", xs: "15px" } }}>
-              <DropCap>C</DropCap>ounselling can help you to face life’s challenges, feel better about painful experiences, and find a way forward.
+              Counselling can help you to face life’s challenges, feel better about painful experiences, and find a way forward.
                 </MainText>
                 </Box>
             <Box>
@@ -40,9 +44,7 @@ const Home = () => {
               <Text sx={{ display: { xs: "none" }, fontSize: { sm: "20px", xs: "15px" }}} pt={2} pb={2}>
               Confidential, compassionate counselling in Clarkston, near Glasgow and online
               </Text>
-              <MainText pb={2} sx={{ fontSize: { sm: "18px", xs: "15px" } }}>
-              On a counselling journey with me, I aim to work with you to help you overcome any blocks holding you back, find your own solutions to personal and relationship challenges, and assist you to explore your emotional world. I can also help you with issues like depression, anxiety and low self-esteem. 
-              </MainText>
+
 
               <MainText pb={2} sx={{ fontSize: { sm: "18px", xs: "15px" } }}>
               I understand that speaking to a stranger might feel daunting at first, but I offer caring support and a non-judgmental perspective, no matter what you’re facing. 
@@ -81,7 +83,7 @@ const Home = () => {
               </Text>
 
               <MainText pb={2} sx={{ fontSize: { sm: "18px", xs: "15px" } }}>
-              Taking that first step into counselling can feel daunting but I’m here for you. To find out more about Nicola Kirk Counselling in Clarkston, near Glasgow or online, book a free introductory call with me. This way, we can find out if we’d like to work together.  
+              Taking that first step into counselling can feel daunting but I’m here for you. To find out more about Nicola Kirk Counselling in Clarkston, near Glasgow or online, book a free introductory call with me. This way, we can find out how well we’d work together.  
               </MainText>
 
               <Box sx={{ display: "flex", justifyContent: "center"}} pt={2} pb={2}>

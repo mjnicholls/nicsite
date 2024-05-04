@@ -119,7 +119,7 @@ My goal is to build a trusting therapeutic relationship where you can talk about
 
 <Grid item xs={4} sx={{ display: { sm: "flex", xs: "none"}, justifyContent: "center"}}>
 <BoxPurple>
-<Text sx={{ fontSize: "15px" }}>THE THERAPEUTIC RELATIONSHIP</Text>
+<Text sx={{ fontSize: "15px"}}>WHERE WILL WE MEET?</Text>
 </BoxPurple>
 </Grid>
 
@@ -127,9 +127,11 @@ My goal is to build a trusting therapeutic relationship where you can talk about
 <BoxGreenMain sx={{ padding: { xs: "0px 10px 0px 0px", sm: "10px 25px" }}}>
 
   <MainText sx={{ fontSize: { xs: "12px", sm: "16px" }}}>
-    <p>In order to facilitate the formation of a trusting relationship between counsellor and client, it is important to have clear boundaries, which provide a framework to work within and reveal the limitations of what is acceptable on both sides of the therapeutic relationship. If you choose to attend counselling sessions, I will draw up a contract with you which makes clear the boundaries that we will both work within.</p>
+  <p>I offer sessions online or in person at the <a href="https://www.thegreenbankrooms.co.uk/" target="_blank" rel="noreferrer">Greenbank Rooms</a> in Clarkston near Glasgow.</p>
 
-<p>It is important to note that you will take part in the drawing up of this contract, it isn’t something that will be forced upon you. Boundaries create a safe environment in which you can explore issues important to you and each session will be fifty minutes long. I work in an open-ended way and I will review how things are going with you regularly to make sure that you are getting the most from sessions.</p>
+<Box sx={{ display: "flex", justifyContent: "center"}} pb={2}>
+<img width="600px" height="350px" src="../greenbank.png" alt="Greenbank Rooms"></img>
+</Box>
 
     </MainText>
 </BoxGreenMain>
@@ -140,11 +142,13 @@ My goal is to build a trusting therapeutic relationship where you can talk about
 
   <MainText sx={{ fontSize: { xs: "12px", sm: "16px" }}}>
 
-  <Text sx={{ fontSize: "10px"}}>THE THERAPEUTIC RELATIONSHIP</Text>
+  <Text sx={{ fontSize: "10px"}}>WHERE WILL WE MEET?</Text>
 <hr></hr>
-<p>In order to facilitate the formation of a trusting relationship between counsellor and client, it is important to have clear boundaries, which provide a framework to work within and reveal the limitations of what is acceptable on both sides of the therapeutic relationship. If you choose to attend counselling sessions, I will draw up a contract with you which makes clear the boundaries that we will both work within.</p>
+<p>I offer sessions online or in person at the <a href="https://www.thegreenbankrooms.co.uk/">Greenbank Rooms</a> in Clarkston near Glasgow.</p>
 
-<p>It is important to note that you will take part in the drawing up of this contract, it isn’t something that will be forced upon you. Boundaries create a safe environment in which you can explore issues important to you and each session will be fifty minutes long. I work in an open-ended way and I will review how things are going with you regularly to make sure that you are getting the most from sessions.</p>
+<Box sx={{ display: "flex", justifyContent: "center"}} pb={2}>
+<img width="300px" height="200px" src="../greenbank.png" alt="Greenbank Rooms"></img>
+</Box>
     </MainText>
 </BoxGreenMain>
 </Grid>

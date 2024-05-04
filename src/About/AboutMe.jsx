@@ -61,13 +61,13 @@ const AboutMe = () => {
           </MainText>
           <MainText sx={{ fontSize: { xs: "12px", sm: "16px" } }}>
             <p>
-            Therapy changed my life. In my 20s, I struggled with my mental health and began a course of therapy. The warmth and unconditional support offered to me by my therapist was a lifeline during a difficult time.
+            Therapy changed my life. In my 20s, I sought help for my mental health and began a course of therapy. The warmth and unconditional support offered to me by my therapist was a lifeline during a difficult time.
             </p>
             <p>
             After my therapy ended, my interest in mental health continued to grow. I knew that I wanted to offer the same help to others that had been given to me, so I left my career in education to train as a counsellor. It was the best decision I ever made.
             </p>
             <p>
-            Because of my own struggles in the past, I combine personal insights into mental health with professional training and experience in counselling. We all face challenges in our lives at times and this can feel very isolating. But whatever you are going through, I can walk alongside you and help you to work through it.
+            Because of my own counselling experiences in the past, I combine personal insights into mental health with professional training and expertise in counselling. We all face challenges in our lives at times and this can feel very isolating. But whatever you are going through, I can walk alongside you and help you to work through it.
             </p>
           </MainText>
 

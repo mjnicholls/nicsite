@@ -38,7 +38,7 @@ const Cost = () => {
 
         <MainText sx={{ fontSize: { xs: "12px", sm: "16px" } }}>
             <p>
-            I can charge a reduced fee for clients who are claiming benefits, on low incomes, or students. We can discuss your requirements during the initial call to determine which option is best for you. I review my fees on an annual basis in January and will give you two calendar months’ notice of any proposed increase. 
+            I can charge a reduced fee for clients who are claiming benefits, on low incomes, or students. We can discuss your requirements during the initial call to determine which option is best for you.
             </p>
         </MainText>
         </Box>
