@@ -6,14 +6,13 @@ import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
-import { HeaderText, ListText } from "./Styles";
+import { HeaderText, ListText, ButtonNav } from "./Styles";
 import MenuItem from '@mui/material/MenuItem';
 import { useNavigate } from 'react-router-dom';
 
 const pages = [
   {
-    title: "Home ",
+    title: "Home",
     link: "/",
   },
   {
@@ -61,7 +60,7 @@ const Navbar = (props) => {
       <Container maxWidth="xl" sx={{ backgroundColor: "white" }}>
         <Toolbar disableGutters sx={{ display: "flex", justifyContent: "center"  }}>
           <Box 
-          onClick={() => handleNavigation('/home')}
+          onClick={() => handleNavigation('/')}
           sx={{ display: { xs: "none", sm: "flex" }, mr: 1, cursor: "pointer" }} >
           <img 
               src="../../../greenlogo.jpg" alt="logo" width="125px" height="125px"
@@ -128,7 +127,7 @@ const Navbar = (props) => {
               ))}
             </Menu>
           </Box>
-          <Box onClick={() => handleNavigation('/home')} sx={{ display: { xs: "none", sm: "flex" }, mr: 1, cursor: "pointer" }} >
+          <Box onClick={() => handleNavigation('/')} sx={{ display: { xs: "none", sm: "flex" }, mr: 1, cursor: "pointer" }} >
           <img 
             src="../../../greenlogo.jpg" alt="logo" width="125px" height="125px"
           />
@@ -147,7 +146,7 @@ const Navbar = (props) => {
           >
             Nicola Kirk Counselling
           </HeaderText>
-          <Box onClick={() => handleNavigation('/home')} sx={{ display: { xs: "flex", sm: "none" }, mr: 1, cursor: "pointer" }} >
+          <Box onClick={() => handleNavigation('/')} sx={{ display: { xs: "flex", sm: "none" }, mr: 1, cursor: "pointer" }} >
           <img 
             src="../../../greenlogo.jpg" alt="logo" width="50px" height="50px"
           />
@@ -155,16 +154,16 @@ const Navbar = (props) => {
           </Box>
         </Toolbar>
 
-        <Box sx={{ flexGrow: 1, display: { xs: "none", sm: "flex" }, justifyContent: "center"  }}>
+        <Box sx={{ flexGrow: 1, display: { xs: "none", sm: "flex" }, justifyContent: "center", pt:2  }}>
             {pages.map((page) => (
-              <Button
+              <ButtonNav
                 key={page}
                 //onClick={handleCloseNavMenu}
                 onClick={() => handleNavigation(page.link)}
-                sx={{ my: 2, color: "black", display: "block" }}
+                sx={{ my: 2, mr: 4 }}
               >
                 <ListText pr={2} pl={2}>{page.title}</ListText>
-              </Button>
+              </ButtonNav>
             ))}
           </Box>
       </Container>
