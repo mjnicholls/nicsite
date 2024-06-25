@@ -42,14 +42,6 @@ const Contact = () => {
     
       </MainText>
 
-      <MainText sx={{ fontSize: { xs: "12px", sm: "22px" } }} pt={3}>
-            
-            You can find me on <a href="https://www.facebook.com/61559247180866/">Facebook</a> and <a href="https://www.instagram.com/nicolakirkcounselling"  target="_blank" rel="noreferrer">Instagram</a>
-    
-      </MainText>
-
-
-
       <Box sx={{ display: { xs: "none", sm: "flex" }, justifyContent: "center", mr: 1, pt:4 }} >
           <img 
               src="../../../greenlogo.jpg" alt="logo" width="400" height="400"

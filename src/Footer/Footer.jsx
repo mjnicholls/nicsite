@@ -36,12 +36,6 @@ const Footer = () => {
           </Grid>
 
           <Grid item xs={4} sx={{ display: { sm: "flex", xs: "none" }, justifyContent: "center", flexDirection: "column" }}>
-          <Box sx={{ display: { sm: "flex", xs: "none" }, justifyContent: "center"}}>
-          <a href="https://www.facebook.com/61559247180866/" target="_blank" rel="noreferrer" > <FacebookIcon /></a>
-          <a href="https://www.instagram.com/nicolakirkcounselling"  target="_blank" rel="noreferrer">
-            <InstagramIcon />
-            </a>
-          </Box>
           <Box pt={1} sx={{ display: { sm: "flex", xs: "none" }, justifyContent: "center"}}>
           <Text>(c) 2024 Nicola Kirk Counselling</Text>
           </Box>
