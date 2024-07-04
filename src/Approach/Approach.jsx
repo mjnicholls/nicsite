@@ -1,10 +1,90 @@
 import React from "react";
+import { useTheme } from '@mui/material/styles';
 import { Box, Grid } from "@mui/material";
 import { Text } from './Styles'
 import { BoxGreen, BoxPurple, BoxPurpleMain, BoxGreenMain } from "./Styles";
 import { MainText } from "../globalStyles";
+import MobileStepper from '@mui/material/MobileStepper';
+import Paper from '@mui/material/Paper';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
+import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
+import SwipeableViews from 'react-swipeable-views';
+import { autoPlay } from 'react-swipeable-views-utils';
+
+const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+
+const images = [
+  {
+    label: '↓ The Greenbank Rooms, Clarkston',
+    imgPath:
+      '../greenbank.png',
+  },
+  {
+    label: '↓ Glasgow Therapy Rooms, City Centre',
+    imgPath:
+      '../Isherwood1.jpg',
+  },
+  {
+    label: '↓ Glasgow Therapy Rooms, City Centre',
+    imgPath:
+      '../Isherwood2.jpg',
+  },
+  {
+    label: '↓ Glasgow Therapy Rooms, City Centre',
+    imgPath:
+      '../Isherwood3.jpg',
+  },
+  {
+    label: '↓ Glasgow Therapy Rooms, City Centre',
+    imgPath:
+      '../Isherwood4.jpg',
+  },
+  {
+    label: '↓ Glasgow Therapy Rooms, City Centre',
+    imgPath:
+      '../Orwell1.jpg',
+  },
+  {
+    label: '↓ Glasgow Therapy Rooms, City Centre',
+    imgPath:
+      '../Orwell2.jpg',
+  },
+  {
+    label: '↓ Glasgow Therapy Rooms, City Centre',
+    imgPath:
+      '../Orwell3.jpg',
+  },
+  {
+    label: '↓ Glasgow Therapy Rooms, City Centre',
+    imgPath:
+      '../Orwell4.jpg',
+  },
+  {
+    label: '↓ Glasgow Therapy Rooms, City Centre',
+    imgPath:
+      '../Orwell5.jpg',
+  }
+];
 
 const Approach = () => {
+
+  const theme = useTheme();
+  const [activeStep, setActiveStep] = React.useState(0);
+  const maxSteps = images.length;
+
+  const handleNext = () => {
+    setActiveStep((prevActiveStep) => prevActiveStep + 1);
+  };
+
+  const handleBack = () => {
+    setActiveStep((prevActiveStep) => prevActiveStep - 1);
+  };
+
+  const handleStepChange = (step) => {
+    setActiveStep(step);
+  };
 
   return (
 
@@ -68,7 +148,7 @@ sx={{ display: "flex", justifyContent: "center"}}>
 <Grid item xs={8} sx={{ display: { sm: "flex", xs: "none"}, justifyContent: "center"}}>
 <BoxPurpleMain sx={{ padding: { xs: "0px 0px 0px 10px", sm: "10px 25px" }}}>
 <MainText sx={{ fontSize: { xs: "12px", sm: "16px" }}}>
-    <p>At Nicola Kirk Counselling in Clarkston, near Glasgow we will meet in a safe and calm private counselling room. If you prefer online or telephone counselling, I offer those services too.
+    <p>At Nicola Kirk Counselling in Glasgow City Centre and Clarkson, we will meet in a safe and calm private counselling room. If you prefer online or telephone counselling, I offer those services too.
 </p>
 <p>
   I aim to create a caring, confidential and non-judgemental space for clients. My approach is to see the whole person and their potential, rather than focusing on specific behaviours or traits. In our sessions together, I’ll follow your lead and explore whatever you want to look at that day.
@@ -90,7 +170,7 @@ My goal is to build a trusting therapeutic relationship where you can talk about
 
 <Text sx={{ fontSize: "10px"}}>WHAT HAPPENS IN A SESSION?</Text>
 <hr></hr>
-    <p>At Nicola Kirk Counselling in Clarkston, near Glasgow we will meet in a safe and calm private counselling room. If you prefer online or telephone counselling, I offer those services too.
+    <p>At Nicola Kirk Counselling in Glasgow City Centre and Clarkson, we will meet in a safe and calm private counselling room. If you prefer online or telephone counselling, I offer those services too.
 </p>
 <p>
   I aim to create a caring, confidential and non-judgemental space for clients. My approach is to see the whole person and their potential, rather than focusing on specific behaviours or traits. In our sessions together, I’ll follow your lead and explore whatever you want to look at that day.
@@ -127,10 +207,88 @@ My goal is to build a trusting therapeutic relationship where you can talk about
 <BoxGreenMain sx={{ padding: { xs: "0px 10px 0px 0px", sm: "10px 25px" }}}>
 
   <MainText sx={{ fontSize: { xs: "12px", sm: "16px" }}}>
-  <p>I offer sessions online or in person at the <a href="https://www.thegreenbankrooms.co.uk/" target="_blank" rel="noreferrer">Greenbank Rooms</a> in Clarkston near Glasgow.</p>
+  <p>I offer sessions online or in person at the <a href="https://www.thegreenbankrooms.co.uk/" target="_blank" rel="noreferrer">Greenbank Rooms</a> in Clarkston, or at the Glasgow Therapy Rooms in the City Centre.</p>
 
-<Box sx={{ display: "flex", justifyContent: "center"}} pb={2}>
-<img width="600px" height="350px" src="../greenbank.png" alt="Greenbank Rooms"></img>
+  <Box sx={{ maxWidth: 700, flexGrow: 1 }}>
+  <Paper
+    square
+    elevation={0}
+    sx={{
+      display: 'flex',
+      alignItems: 'center',
+      height: 50,
+      pl: 0,
+      bgcolor: '#daffd5',
+    }}
+  >
+    <Typography sx={{ fontFamily: "Kalam" }}>{images[activeStep].label}</Typography>
+  </Paper>
+  <AutoPlaySwipeableViews
+    axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
+    index={activeStep}
+    onChangeIndex={handleStepChange}
+    enableMouseEvents
+  >
+    {images.map((step, index) => (
+      <div key={step.label}>
+        {Math.abs(activeStep - index) <= 2 ? (
+          <Box
+            component="img"
+            sx={{
+              height: '355px',
+              display: 'block',
+              maxWidth: '100%',
+              overflow: 'hidden',
+              width: '100%',
+              objectFit: 'contain', // Ensures the image is contained within the box
+            }}
+            src={step.imgPath}
+            alt={step.label}
+          />
+        ) : null}
+      </div>
+    ))}
+  </AutoPlaySwipeableViews>
+  <MobileStepper
+    sx={{ backgroundColor: "#daffd5" }}
+    steps={maxSteps}
+    position="static"
+    activeStep={activeStep}
+    nextButton={
+      <Button
+        size="small"
+        onClick={handleNext}
+        disabled={activeStep === maxSteps - 1}
+      >
+        {theme.direction === 'rtl' ? (
+          <>
+          <KeyboardArrowLeft />
+          <KeyboardArrowLeft />
+          </>
+        ) : (
+          <>
+          <KeyboardArrowRight />
+          <KeyboardArrowRight />
+          </>
+        )}
+      </Button>
+    }
+    backButton={
+      <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
+        {theme.direction === 'rtl' ? (
+          <>
+          <KeyboardArrowRight />
+          <KeyboardArrowRight />
+          </>
+        ) : (
+          <>
+          <KeyboardArrowLeft />
+          <KeyboardArrowLeft />
+          </>
+        )}
+      </Button>
+    }
+  />
 </Box>
 
     </MainText>
@@ -144,10 +302,92 @@ My goal is to build a trusting therapeutic relationship where you can talk about
 
   <Text sx={{ fontSize: "10px"}}>WHERE WILL WE MEET?</Text>
 <hr></hr>
-<p>I offer sessions online or in person at the <a href="https://www.thegreenbankrooms.co.uk/">Greenbank Rooms</a> in Clarkston near Glasgow.</p>
+<p>I offer sessions online or in person at the <a href="https://www.thegreenbankrooms.co.uk/" target="_blank" rel="noreferrer">Greenbank Rooms</a> in Clarkston, or at the Glasgow Therapy Rooms in the City Centre.</p>
 
-<Box sx={{ display: "flex", justifyContent: "center"}} pb={2}>
+{/* <Box sx={{ display: "flex", justifyContent: "center"}} pb={2}>
 <img width="300px" height="200px" src="../greenbank.png" alt="Greenbank Rooms"></img>
+</Box> */}
+
+<Box sx={{ maxWidth: 400, flexGrow: 1 }}>
+  <Paper
+    square
+    elevation={0}
+    sx={{
+      display: 'flex',
+      alignItems: 'center',
+      height: 50,
+      pl: 0,
+      bgcolor: '#daffd5',
+    }}
+  >
+    <Typography sx={{ fontFamily: "Kalam", fontSize: "14px" }}>{images[activeStep].label}</Typography>
+  </Paper>
+  <AutoPlaySwipeableViews
+    axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
+    index={activeStep}
+    onChangeIndex={handleStepChange}
+    enableMouseEvents
+  >
+    {images.map((step, index) => (
+      <div key={step.label}>
+        {Math.abs(activeStep - index) <= 2 ? (
+          <Box
+            component="img"
+            sx={{
+              height: '355px',
+              display: 'block',
+              maxWidth: '100%',
+              overflow: 'hidden',
+              width: '100%',
+              objectFit: 'contain', // Ensures the image is contained within the box
+            }}
+            src={step.imgPath}
+            alt={step.label}
+          />
+        ) : null}
+      </div>
+    ))}
+  </AutoPlaySwipeableViews>
+  <MobileStepper
+    sx={{ backgroundColor: "#daffd5" }}
+    steps={maxSteps}
+    position="static"
+    activeStep={activeStep}
+    nextButton={
+      <Button
+        size="small"
+        onClick={handleNext}
+        disabled={activeStep === maxSteps - 1}
+      >
+        {theme.direction === 'rtl' ? (
+          <>
+          <KeyboardArrowLeft />
+          <KeyboardArrowLeft />
+          </>
+        ) : (
+          <>
+          <KeyboardArrowRight />
+          <KeyboardArrowRight />
+          </>
+        )}
+      </Button>
+    }
+    backButton={
+      <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
+        {theme.direction === 'rtl' ? (
+          <>
+          <KeyboardArrowRight />
+          <KeyboardArrowRight />
+          </>
+        ) : (
+          <>
+          <KeyboardArrowLeft />
+          <KeyboardArrowLeft />
+          </>
+        )}
+      </Button>
+    }
+  />
 </Box>
     </MainText>
 </BoxGreenMain>

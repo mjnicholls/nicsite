@@ -26,7 +26,7 @@ const Contact = () => {
 
       <MainText sx={{ fontSize: { xs: "12px", sm: "22px" } }}>
             
-            To book a session or make an enquiry, email me at <a href="mailto:comeasyouarecounselling@proton.me">nicolakirkcounselling@proton.me</a>
+            To book a session or make an enquiry, email me at <a href="mailto:nicolakirkcounselling@proton.me">nicolakirkcounselling@proton.me</a>
     
       </MainText>
 

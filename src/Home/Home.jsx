@@ -25,7 +25,7 @@ const Home = () => {
           <Grid item xs={12} sm={8}>
 
           <Text sx={{ display: { sm: "none" }, fontSize: "16px",}} pt={2} pb={2}>
-              Confidential, compassionate counselling in Clarkston, near Glasgow and online
+              Confidential, compassionate counselling in Glasgow City Centre, Clarkston, and online
               </Text>
           <Box>
 
@@ -42,7 +42,7 @@ const Home = () => {
               </MainText>
 
               <Text sx={{ display: { xs: "none" }, fontSize: { sm: "20px", xs: "15px" }}} pt={2} pb={2}>
-              Confidential, compassionate counselling in Clarkston, near Glasgow and online
+              Confidential, compassionate counselling in Glasgow City Centre, Clarkston, and online
               </Text>
 
 
@@ -59,7 +59,7 @@ const Home = () => {
             </Box>
 
               <MainText pb={2} sx={{ fontSize: { sm: "18px", xs: "15px" } }}>
-              I’m Nicola Kirk, a fully qualified, committed counsellor in Clarkston, near Glasgow southside. 
+              I’m Nicola Kirk, a fully qualified, committed counsellor in Glasgow City Centre, Clarkston, and online. 
               </MainText>
 
               <MainText pb={2} sx={{ fontSize: { sm: "18px", xs: "15px" } }}>

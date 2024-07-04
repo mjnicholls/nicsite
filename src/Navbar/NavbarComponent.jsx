@@ -81,7 +81,7 @@ const Navbar = (props) => {
           </HeaderText>
 
           <HeaderText sx={{ fontSize: "15px", display: { xs: "none", sm: "flex" }}} pt={1}>
-          In Clarkston (near Glasgow) and Online 
+          Glasgow City Centre, Clarkston, and Online 
           </HeaderText>
           </Box>
 

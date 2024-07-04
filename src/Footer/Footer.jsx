@@ -25,12 +25,18 @@ const Footer = () => {
        <Box sx={{ backgroundColor: "#eadfe9"}} p={2}>
         <Grid container sx={{ display: "flex", alignItems:"center" }}>
           <Grid item xs={4} sx={{ display: { sm: "flex", xs: "none" }, justifyContent: "center"}}>
-          <img width="150px" alt="bacp logo" src="../../../BacpLogo.png" />
+          <Box sx={{ pr: 3 }}>
+          <img width="200px" height="100px" alt="bacp logo" src="../../../BacpLogo.png" />
+          </Box>
+          <img width="100px" height="100px" alt="bacp logo" src="../../../OTC.png" />
           </Grid>
 
           <Grid item xs={6} sx={{ display: { sm: "none", xs: "flex" }, justifyContent: "center"}}>
             <Box>
+            <Box sx={{ pr: 3 }}>
           <img width="50px" alt="bacp logo" src="../../../BacpLogo.png" />
+          </Box>
+          <img width="50px" height="50px" alt="bacp logo" src="../../../OTC.png" />
             <Text sx={{ fontSize: "8px" }} pt={2}>(c) 2024 Nicola Kirk Counselling</Text>
             </Box>
           </Grid>
@@ -46,7 +52,7 @@ const Footer = () => {
            <CallIcon sx={{ fontSize: { sm: "13px", xs: "8px" } }} />{" "}0746 834 5451
             </Text>
             <Text sx={{ fontSize: { sm: "15px", xs: "6px" } }}>
-           <EmailIcon sx={{ fontSize: { sm: "13px", xs: "8px" } }} />{" "}nicolakirkcounselling@proton.me
+           <EmailIcon sx={{ fontSize: { sm: "13px", xs: "8px" } }} />{" "}<a href="mailto:nicolakirkcounselling@proton.me">nicolakirkcounselling@proton.me</a>
             </Text>
             <Box sx={{ display: "flex", flexDirection: "row"}}>
             <LockIcon sx={{ fontSize: { sm: "13px", xs: "8px" } }} />
