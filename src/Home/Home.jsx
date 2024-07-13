@@ -30,7 +30,7 @@ const Home = () => {
           <Box>
 
           <MainText pb={2} sx={{ fontSize: { sm: "18px", xs: "15px" } }}>
-          <DropCap>S</DropCap>ometimes we reach a point when we realise things haven’t been right for a while. We feel stuck in one place and perhaps we can’t even put our finger on the reason why. We feel our emotions are in control of us and it can feel scary. We might be going through a transition in life which leaves us questioning who we are now, and we may even question our own self-worth. It can feel almost impossible to reach out for help.
+          <DropCap>W</DropCap>e can reach a point when we realise things haven’t been right for a while. We feel stuck and we can’t see why. Perhaps our emotions seem to control us and it feels scary. It can feel hard to reach out for help, but talking about this with someone removed from the situation can help us gain a new perspective and more clarity.
               </MainText>
               <MainText pb={2} sx={{ fontSize: { sm: "18px", xs: "15px" } }}>
               I’m a Glasgow-based counsellor and can provide support for issues like anxiety and stress, low mood, loss and bereavement. 
@@ -38,7 +38,7 @@ const Home = () => {
                 </Box>
             <Box>
             <MainText pb={2} sx={{ fontSize: { sm: "18px", xs: "15px" } }}>
-            I provide you with a confidential, safe space to talk about whatever it is that is troubling you. I listen carefully and try to understand things from your perspective, without judgement. I believe that you are the expert on your own life and that you have an innate ability to grow and thrive. My role is to be alongside you in finding the best path forward.  
+            I have a trauma-informed practice, providing you with a neutral, confidential space to talk about whatever it is that is troubling you. I listen carefully and look at things from your perspective, without judging you. I believe that you are the expert on your own life and that you have an innate ability to grow and thrive. My role is to be alongside you, supporting you in finding the best path forward.   
               </MainText>
 
               <Text sx={{ display: { xs: "none" }, fontSize: { sm: "20px", xs: "15px" }}} pt={2} pb={2}>
@@ -73,6 +73,7 @@ const Home = () => {
               <li>Higher National Certificate in Counselling</li>
               <li>Professional Development Award in Addiction Counselling</li>
               <li>How to do counselling online: a coronavirus primer</li> 
+              <li>Certificate in Online and Telephone Counselling (ACTO recognised)</li>
               <li>I am currently studying towards a Diploma in Therapeutic Safety in Trauma</li>
 
               </ul>

@@ -85,6 +85,8 @@ const AboutMe = () => {
               <li>Loneliness and isolation</li>
               <li>Relationship issues</li>
               <li>Low self-esteem</li>
+              <li>Trauma</li>
+              <li>Suicide and self-harm</li>
             </ul>
           </MainText>
 
