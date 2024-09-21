@@ -30,7 +30,7 @@ const Home = () => {
           <Box>
 
           <MainText pb={2} sx={{ fontSize: { sm: "18px", xs: "15px" } }}>
-          <DropCap>W</DropCap>e can reach a point when we realise things haven’t been right for a while. We feel stuck and we can’t see why. Perhaps our emotions seem to control us and it feels scary. It can feel hard to reach out for help, but talking about this with someone removed from the situation can help us gain a new perspective and more clarity.
+          <DropCap>H</DropCap>ave you reached a point where you realise things haven’t been right for a while? Do you feel stuck and you can’t see why? Perhaps your emotions feel in control of you and it feels scary. It can feel hard to reach out for help, but talking about this with someone removed from the situation can help you to gain a new perspective and more clarity.
               </MainText>
               <MainText pb={2} sx={{ fontSize: { sm: "18px", xs: "15px" } }}>
               I’m a Glasgow-based counsellor and can provide support for issues like anxiety and stress, low mood, loss and bereavement. 
@@ -69,11 +69,13 @@ const Home = () => {
               <MainText pb={2} sx={{ fontSize: { sm: "18px", xs: "15px" } }}>
               <ul>
               <li>Member of the British Association for Counselling and Psychotherapy (BACP)</li>
-              <li>Diploma in Humanistic Counselling (BACP approved)</li>
+              <li>Diploma in Counselling</li>
               <li>Higher National Certificate in Counselling</li>
               <li>Professional Development Award in Addiction Counselling</li>
               <li>How to do counselling online: a coronavirus primer</li> 
               <li>Certificate in Online and Telephone Counselling (ACTO recognised)</li>
+              <li>ASIST (Applied Suicide Intervention Skills Training)</li>
+              <li>Emotion-Focused Therapy (EFT) Level 1 Advanced Professional Training </li>
               <li>I am currently studying towards a Diploma in Therapeutic Safety in Trauma</li>
 
               </ul>

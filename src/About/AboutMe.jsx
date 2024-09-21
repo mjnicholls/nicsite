@@ -49,7 +49,7 @@ const AboutMe = () => {
             NICOLA KIRK
           </MainText>
           <MainText sx={{ fontSize: { sm: "25px", xs: "15px" } }} pb={3}>
-            HUMANISTIC INTEGRATIVE COUNSELLOR
+            PERSON-CENTRED COUNSELLOR
           </MainText>
 
           <Box pb={2} sx={{ display: { sm: "none", xs: "flex" }, justifyContent: "center" }}>
