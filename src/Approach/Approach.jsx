@@ -22,49 +22,9 @@ const images = [
       '../greenbank.png',
   },
   {
-    label: '↓ Glasgow Therapy Rooms, City Centre',
+    label: '↓ St. Enoch Square, City Centre',
     imgPath:
-      '../Isherwood1.jpg',
-  },
-  {
-    label: '↓ Glasgow Therapy Rooms, City Centre',
-    imgPath:
-      '../Isherwood2.jpg',
-  },
-  {
-    label: '↓ Glasgow Therapy Rooms, City Centre',
-    imgPath:
-      '../Isherwood3.jpg',
-  },
-  {
-    label: '↓ Glasgow Therapy Rooms, City Centre',
-    imgPath:
-      '../Isherwood4.jpg',
-  },
-  {
-    label: '↓ Glasgow Therapy Rooms, City Centre',
-    imgPath:
-      '../Orwell1.jpg',
-  },
-  {
-    label: '↓ Glasgow Therapy Rooms, City Centre',
-    imgPath:
-      '../Orwell2.jpg',
-  },
-  {
-    label: '↓ Glasgow Therapy Rooms, City Centre',
-    imgPath:
-      '../Orwell3.jpg',
-  },
-  {
-    label: '↓ Glasgow Therapy Rooms, City Centre',
-    imgPath:
-      '../Orwell4.jpg',
-  },
-  {
-    label: '↓ Glasgow Therapy Rooms, City Centre',
-    imgPath:
-      '../Orwell5.jpg',
+      '../walden.png',
   }
 ];
 
@@ -207,7 +167,7 @@ My goal is to build a trusting therapeutic relationship where you can talk about
 <BoxGreenMain sx={{ padding: { xs: "0px 10px 0px 0px", sm: "10px 25px" }}}>
 
   <MainText sx={{ fontSize: { xs: "12px", sm: "16px" }}}>
-  <p>I offer sessions online or in person at the <a href="https://www.thegreenbankrooms.co.uk/" target="_blank" rel="noreferrer">Greenbank Rooms</a> in Clarkston, or at the Glasgow Therapy Rooms in the City Centre.</p>
+  <p>I offer sessions online or in person at the <a href="https://www.thegreenbankrooms.co.uk/" target="_blank" rel="noreferrer">Greenbank Rooms</a> in Clarkston, or in St. Enoch Square in the City Centre.</p>
 
   <Box sx={{ maxWidth: 700, flexGrow: 1 }}>
   <Paper
@@ -302,7 +262,7 @@ My goal is to build a trusting therapeutic relationship where you can talk about
 
   <Text sx={{ fontSize: "10px"}}>WHERE WILL WE MEET?</Text>
 <hr></hr>
-<p>I offer sessions online or in person at the <a href="https://www.thegreenbankrooms.co.uk/" target="_blank" rel="noreferrer">Greenbank Rooms</a> in Clarkston, or at the Glasgow Therapy Rooms in the City Centre.</p>
+<p>I offer sessions online or in person at the <a href="https://www.thegreenbankrooms.co.uk/" target="_blank" rel="noreferrer">Greenbank Rooms</a> in Clarkston, or in St. Enoch Square in the City Centre.</p>
 
 {/* <Box sx={{ display: "flex", justifyContent: "center"}} pb={2}>
 <img width="300px" height="200px" src="../greenbank.png" alt="Greenbank Rooms"></img>
