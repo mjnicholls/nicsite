@@ -38,7 +38,7 @@ const Contact = () => {
 
       <MainText sx={{ fontSize: { xs: "12px", sm: "22px" } }} pt={3}>
             
-            You can also book an appointment through <a href="https://www.counselling-directory.org.uk/counsellors/nicola-kirk" target="_blank" rel="noreferrer" >Counselling Directory</a> or <a href="https://www.psychologytoday.com/gb/counselling/nicola-kirk-clarkston-sct/1292608">Psychology Today</a>
+            You can also book an appointment through <a href="https://www.counselling-directory.org.uk/counsellors/nicola-kirk" target="_blank" rel="noreferrer" >Counselling Directory</a> or <a href="https://www.bacp.co.uk/therapists/402784/nicola-kirk/glasgow-g2">BACP Directory</a>
     
       </MainText>
 
