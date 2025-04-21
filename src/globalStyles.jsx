@@ -1,7 +1,9 @@
-import { styled } from '@mui/material/styles'
+import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
 
 export const MainText = styled(Typography)({
-    fontFamily: "Josefin Sans",
-    fontSize: "16px",
-})
+    fontFamily: 'PlayfairDisplayVariable',
+    fontVariationSettings: '"wght" 800',
+    fontWeight: 800,
+    fontSize: '16px',
+  });

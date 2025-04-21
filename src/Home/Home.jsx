@@ -16,10 +16,10 @@ const Home = () => {
   return (
     <>
       <Box sx={{ p: { sm: 8, xs: 2 }}} pt={4}>
-        <Grid container sx={{ backgroundColor: "#daffd5", borderRadius: "15px", p: { xs: 2, sm: 4} }}>
+        <Grid container sx={{ backgroundColor: "#eadfe9", borderRadius: "15px", p: { xs: 2, sm: 4} }}>
           <Grid item sm={4} sx={{ display: { xs: "none", sm: "flex" }, alignItems: "top", justifyContent: "center"}}>
             <Box>
-              <img width="220px" height="300px" alt="Nicola Kirk" src="../../../nic4.jpg" />
+              <img width="320px" height="250px" alt="Nicola Kirk" src="../../../NewFace.png" />
             </Box>
           </Grid>
           <Grid item xs={12} sm={8}>
@@ -55,7 +55,7 @@ const Home = () => {
               </Text>
 
               <Box sx={{ display: { sm: "none"}, pb: 2}}>
-              <img width="220px" height="300px" alt="Nicola Kirk" src="../../../nic4.jpg" />
+              <img width="180px" height="120px" alt="Nicola Kirk" src="../../../NewFace.png" />
             </Box>
 
               <MainText pb={2} sx={{ fontSize: { sm: "18px", xs: "15px" } }}>

@@ -33,7 +33,7 @@ const AboutMe = () => {
           sx={{
             display: { sm: "flex", xs: "none" },
             justifyContent: "center",
-            backgroundColor: "#daffd5",
+            backgroundColor: "#eadfe9",
             borderRadius: { sm: "15px 0px 0px 15px" },
           }}
         >
@@ -54,7 +54,7 @@ const AboutMe = () => {
           sx={{
             display: { sm: "flex" },
             flexDirection: "column",
-            backgroundColor: "#daffd5",
+            backgroundColor: "#eadfe9",
             borderRadius: {
               sm: "0px 15px 15px 0px",
               xs: "15px 15px 15px 15px",
@@ -63,7 +63,7 @@ const AboutMe = () => {
           pr={4}
         >
           <MainText
-            sx={{ fontSize: { sm: "30px", xs: "20px" }, fontFamily: "Kalam" }}
+            sx={{ fontSize: { sm: "30px", xs: "20px" }}}
             pb={1}
             pt={2}
           >
@@ -89,7 +89,7 @@ const AboutMe = () => {
           </Box>
 
           <MainText
-            sx={{ fontSize: { sm: "22px", xs: "17px" }, fontFamily: "Kalam" }}
+            sx={{ fontSize: { sm: "22px", xs: "17px" }}}
           >
             Why did I become a counsellor?
           </MainText>
@@ -117,7 +117,7 @@ const AboutMe = () => {
           </MainText>
 
           <MainText
-            sx={{ fontSize: { sm: "22px", xs: "17px" }, fontFamily: "Kalam" }}
+            sx={{ fontSize: { sm: "22px", xs: "17px" } }}
             pt={2}
           >
             What I can help you with:
@@ -146,12 +146,12 @@ const AboutMe = () => {
 
           <Box sx={{ display: "flex", justifyContent: "center" }} pt={2} pb={2}>
             <BookButton onClick={() => handleNavigation("/contact")}>
-              <Text>Ask Nicola a question</Text>
+              <Text>Ask me a question</Text>
             </BookButton>
           </Box>
 
           <MainText
-            sx={{ fontSize: { sm: "22px", xs: "17px" }, fontFamily: "Kalam" }}
+            sx={{ fontSize: { sm: "22px", xs: "17px" } }}
             pt={2}
           >
             What is my professional experience?
@@ -178,7 +178,7 @@ const AboutMe = () => {
             </p>
 
             <MainText
-              sx={{ fontSize: { sm: "22px", xs: "17px" }, fontFamily: "Kalam" }}
+              sx={{ fontSize: { sm: "22px", xs: "17px" } }}
               pt={2}
             >
               What is my approach to counselling?

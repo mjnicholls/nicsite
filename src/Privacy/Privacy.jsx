@@ -21,7 +21,7 @@ const header = "My lawful basis for holding and using your personal information"
 
 </Box>
 
-<Box sx={{ backgroundColor: "#daffd5", borderRadius: "15px" }} p={4} mb={4}>
+<Box sx={{ backgroundColor: "#eadfe9", borderRadius: "15px" }} p={4} mb={4}>
 <Text sx={{ fontSize: { sm: "19px", xs: "14px" } }} pb={2}>INTRODUCTION</Text>
 <MainText pb={2} sx={{ fontSize: { xs: "12px", sm: "16px" } }}>
 Your privacy is very important to me and you can be confident that your personal information will be kept safe and secure and will only be used for the purpose it was given to me. I adhere to current data protection legislation, including the General Data Protection Regulation (EU/2016/679) (the GDPR), the Data Protection Act 2018 and the Privacy and Electronic Communications (EC Directive) Regulations 2003. 

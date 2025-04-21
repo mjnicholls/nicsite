@@ -10,6 +10,7 @@ import Privacy from "./Privacy/Privacy";
 import { Box } from '@mui/material';
 import { MainText } from "./globalStyles";
 import { Text } from "./About/Styles";
+import './fonts.css';
 
 const containerStyle = {
   display: "flex",

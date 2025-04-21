@@ -6,43 +6,70 @@ import { Text } from "../About/Styles";
 const Cost = () => {
   return (
     <>
+      <Box
+        sx={{
+          pl: { sm: 12, xs: 3 },
+          pr: { sm: 12, xs: 3 },
+          pb: { sm: 4, xs: 18 },
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            pb: { sm: 4, xs: 2 },
+          }}
+          pt={4}
+        >
+          <Text sx={{ fontSize: { sm: "30px", xs: "15px" } }}>Cost</Text>
+        </Box>
 
-<Box sx={{ pl: { sm: 12, xs: 3}, pr: { sm: 12, xs: 3}, pb: { sm: 4, xs: 18 }} }>
-
-<Box sx={{ display: "flex", justifyContent: "center", pb: { sm: 4, xs: 2 }}} pt={4}>
-        <Text sx={{ fontSize: { sm: "30px", xs: "15px" } }}>Cost</Text>
-</Box>
-
-      <Box 
-      sx={{ 
-            backgroundColor: '#eadfe9', 
-            borderRadius: "15px", 
+        <Box
+          sx={{
+            backgroundColor: "#eadfe9",
+            borderRadius: "15px",
             pl: { sm: 8, xs: 3 },
-            pr: { sm: 8, xs: 3 },  
-      }}
-       pb={2} pt={4}>
-
-      <MainText sx={{ fontSize: { sm: "30px", xs: "17px" }, fontFamily: "Kalam" }} >
+            pr: { sm: 8, xs: 3 },
+          }}
+          pb={2}
+          pt={4}
+        >
+          <MainText
+            sx={{
+              fontSize: { sm: "30px", xs: "17px" },
+              fontFamily: "PlayfairDisplayVariable",
+              fontVariationSettings: '"wght" 500',
+              fontWeight: 500,
+            }}
+          >
             FEES
           </MainText>
 
-      <MainText sx={{ fontSize: { xs: "12px", sm: "16px" } }}>
-            <p>
-            I charge a fee of £45 per fifty-minute counselling session.
-            </p>
-      </MainText>
-
-      <MainText sx={{ fontSize: { sm: "30px", xs: "17px" }, fontFamily: "Kalam" }} pt={2}>
-      REDUCED FEE RATES
+          <MainText sx={{ fontSize: { xs: "12px", sm: "16px" } }}>
+            <p>I charge a fee of £45 per fifty-minute counselling session.</p>
           </MainText>
 
-        <MainText sx={{ fontSize: { xs: "12px", sm: "16px" } }}>
+          <MainText
+            sx={{
+              fontSize: { sm: "30px", xs: "17px" },
+              fontFamily: "PlayfairDisplayVariable",
+              fontVariationSettings: '"wght" 500',
+              fontWeight: 500,
+            }}
+            pt={2}
+          >
+            REDUCED FEE RATES
+          </MainText>
+
+          <MainText sx={{ fontSize: { xs: "12px", sm: "16px" } }}>
             <p>
-            I can charge a reduced fee for clients who are claiming benefits, on low incomes, or students. We can discuss your requirements during the initial call to determine which option is best for you.
+              I can charge a reduced fee for clients who are claiming benefits,
+              on low incomes, or students. We can discuss your requirements
+              during the initial call to determine which option is best for you.
             </p>
-        </MainText>
+          </MainText>
         </Box>
-    </Box>
+      </Box>
     </>
   );
 };

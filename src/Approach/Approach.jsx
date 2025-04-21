@@ -1,35 +1,32 @@
 import React from "react";
-import { useTheme } from '@mui/material/styles';
+import { useTheme } from "@mui/material/styles";
 import { Box, Grid } from "@mui/material";
-import { Text } from './Styles'
+import { Text } from "./Styles";
 import { BoxGreen, BoxPurple, BoxPurpleMain, BoxGreenMain } from "./Styles";
 import { MainText } from "../globalStyles";
-import MobileStepper from '@mui/material/MobileStepper';
-import Paper from '@mui/material/Paper';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
-import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
-import SwipeableViews from 'react-swipeable-views';
-import { autoPlay } from 'react-swipeable-views-utils';
+import MobileStepper from "@mui/material/MobileStepper";
+import Paper from "@mui/material/Paper";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft";
+import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
+import SwipeableViews from "react-swipeable-views";
+import { autoPlay } from "react-swipeable-views-utils";
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: '↓ The Greenbank Rooms, Clarkston',
-    imgPath:
-      '../greenbank.png',
+    label: "↓ The Greenbank Rooms, Clarkston",
+    imgPath: "../greenbank.png",
   },
   {
-    label: '↓ St. Enoch Square, City Centre',
-    imgPath:
-      '../walden.png',
-  }
+    label: "↓ St. Enoch Square, City Centre",
+    imgPath: "../walden.png",
+  },
 ];
 
 const Approach = () => {
-
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = images.length;
@@ -47,364 +44,551 @@ const Approach = () => {
   };
 
   return (
-
-<>
-<Box sx={{ display: "flex", justifyContent: "center"}} pt={4}>
-  <Text sx={{ fontSize: { sm: "30px", xs: "15px"} }}>Is Counselling For Me?</Text>
-</Box>
-<Grid
-  container
-  spacing={2}
-  pt={{ xs: 0, sm: 4, md: 4 }}
-  pl={{ xs: 0, sm: 12, md: 12 }}
-  pr={{ xs: 0, sm: 12, md: 12 }}
-  pb={{ xs: 0, sm: 0, md: 0 }}
-  sx={{ display: "flex", justifyContent: "center" }}>
-
-<Grid item xs={4} sx={{ display: { sm: "flex", xs: "none"}, justifyContent: "center"}}>
-<BoxPurple>
-<Text>WHAT IS COUNSELLING?</Text>
-</BoxPurple>
-
-</Grid>
-
-<Grid item xs={12} sx={{ display: { sm: "none", xs: "flex"}, justifyContent: "center", flexDirection: "row" }} mt={4} mr={3} ml={3}>
-<BoxGreenMain sx={{ padding: "10px 10px 10px 10px" }}>
-
-  <MainText sx={{ fontSize: { xs: "12px", sm: "16px" }}}>
-
-  <Text sx={{ fontSize: "10px"}}>WHAT IS COUNSELLING?</Text>
-<hr></hr>
-    <p>Counselling is about offering a listening ear to someone in need of emotional support. The role of a counsellor is to sit alongside you and help you set your own goals to overcome the challenges you are experiencing. 
-</p>
-    <p>
-    As psychologist Gerard Egan points out: “Helpers are effective to the degree that clients, through the helping process, learn how to help themselves more effectively.”  </p>
-    <p>
-    This is just another way of saying that counselling is a collaborative process where we work out the best way forward for you. It’s a supportive partnership. </p>
-    </MainText>
-</BoxGreenMain>
-</Grid>
-
-<Grid item xs={8} sx={{ display: { sm: "flex", xs: "none"}, justifyContent: "center"}}>
-<BoxGreenMain sx={{ padding: { xs: "0px 10px 0px 0px", sm: "10px 25px" }}}>
-
-  <MainText sx={{ fontSize: { xs: "12px", sm: "16px" }}}>
-    <p>Counselling is about offering a listening ear to someone in need of emotional support. The role of a counsellor is to sit alongside you and help you set your own goals to overcome the challenges you are experiencing. 
-</p>
-    <p>
-    As psychologist Gerard Egan points out: “Helpers are effective to the degree that clients, through the helping process, learn how to help themselves more effectively.”  </p>
-    <p>
-    This is just another way of saying that counselling is a collaborative process where we work out the best way forward for you. It’s a supportive partnership. </p>
-    </MainText>
-</BoxGreenMain>
-</Grid>
-
-</Grid>
-
-<Grid container spacing={0} 
-pt={{ xs: 3, sm: 6 }} pl={{ xs: 0, sm: 12 }} pr={{ xs: 0, sm: 12 }} pb={{ xs: 0, sm: 6 }}
-sx={{ display: "flex", justifyContent: "center"}}>
-
-<Grid item xs={8} sx={{ display: { sm: "flex", xs: "none"}, justifyContent: "center"}}>
-<BoxPurpleMain sx={{ padding: { xs: "0px 0px 0px 10px", sm: "10px 25px" }}}>
-<MainText sx={{ fontSize: { xs: "12px", sm: "16px" }}}>
-    <p>At Nicola Kirk Counselling in Glasgow City Centre and Clarkson, we will meet in a safe and calm private counselling room. If you prefer online or telephone counselling, I offer those services too.
-</p>
-<p>
-  I aim to create a caring, confidential and non-judgemental space for clients. My approach is to see the whole person and their potential, rather than focusing on specific behaviours or traits. In our sessions together, I’ll follow your lead and explore whatever you want to look at that day.
-  </p>
-<p>
-My goal is to build a trusting therapeutic relationship where you can talk about your feelings openly and explore any areas you want to work on. This way, you can find your own solutions to issues that you’re facing and feel empowered to move forward.
-  </p>
-  <p>
-  To find out more, please book a free introductory call with me.
-  </p>
-    </MainText>
-
-</BoxPurpleMain>
-</Grid>
-
-<Grid item xs={12} sx={{ display: { sm: "none", xs: "flex"}, justifyContent: "center", flexDirection: "row" }} mt={0} mr={3} ml={3}>
-<BoxPurpleMain sx={{ padding: "10px 10px 10px 10px" }}>
-<MainText sx={{ fontSize: { xs: "12px", sm: "16px" }}}>
-
-<Text sx={{ fontSize: "10px"}}>WHAT HAPPENS IN A SESSION?</Text>
-<hr></hr>
-    <p>At Nicola Kirk Counselling in Glasgow City Centre and Clarkson, we will meet in a safe and calm private counselling room. If you prefer online or telephone counselling, I offer those services too.
-</p>
-<p>
-  I aim to create a caring, confidential and non-judgemental space for clients. My approach is to see the whole person and their potential, rather than focusing on specific behaviours or traits. In our sessions together, I’ll follow your lead and explore whatever you want to look at that day.
-  </p>
-<p>
-My goal is to build a trusting therapeutic relationship where you can talk about your feelings openly and explore any areas you want to work on. This way, you can find your own solutions to issues that you’re facing and feel empowered to move forward.
-  </p>
-  <p>
-  To find out more, please book a free introductory call with me.
-  </p>
-    </MainText>
-</BoxPurpleMain>
-</Grid>
-
-<Grid item xs={4} sx={{ display: { sm: "flex", xs: "none"}, justifyContent: "center"}} pl={2}>
-<BoxGreen>
-<Text sx={{ fontSize: "15px" }}>WHAT HAPPENS IN A SESSION?</Text>
-</BoxGreen>
-
-</Grid>
-
-</Grid>
-
-
-<Grid container spacing={2} pt={{ xs: 3, sm: 0 }} pl={{ xs: 0, sm: 12 }} pr={{ xs: 0, sm: 12 }} pb={{ xs: 0, sm: 0 }} sx={{ display: "flex", justifyContent: "center" }}>
-
-<Grid item xs={4} sx={{ display: { sm: "flex", xs: "none"}, justifyContent: "center"}}>
-<BoxPurple>
-<Text sx={{ fontSize: "15px"}}>WHERE WILL WE MEET?</Text>
-</BoxPurple>
-</Grid>
-
-<Grid item xs={8} sx={{ display: { sm: "flex", xs: "none"}, justifyContent: "center"}}>
-<BoxGreenMain sx={{ padding: { xs: "0px 10px 0px 0px", sm: "10px 25px" }}}>
-
-  <MainText sx={{ fontSize: { xs: "12px", sm: "16px" }}}>
-  <p>I offer sessions online or in person at the <a href="https://www.thegreenbankrooms.co.uk/" target="_blank" rel="noreferrer">Greenbank Rooms</a> in Clarkston, or in St. Enoch Square in the City Centre.</p>
-
-  <Box sx={{ maxWidth: 700, flexGrow: 1 }}>
-  <Paper
-    square
-    elevation={0}
-    sx={{
-      display: 'flex',
-      alignItems: 'center',
-      height: 50,
-      pl: 0,
-      bgcolor: '#daffd5',
-    }}
-  >
-    <Typography sx={{ fontFamily: "Kalam" }}>{images[activeStep].label}</Typography>
-  </Paper>
-  <AutoPlaySwipeableViews
-    axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-    index={activeStep}
-    onChangeIndex={handleStepChange}
-    enableMouseEvents
-  >
-    {images.map((step, index) => (
-      <div key={step.label}>
-        {Math.abs(activeStep - index) <= 2 ? (
-          <Box
-            component="img"
-            sx={{
-              height: '355px',
-              display: 'block',
-              maxWidth: '100%',
-              overflow: 'hidden',
-              width: '100%',
-              objectFit: 'contain', // Ensures the image is contained within the box
-            }}
-            src={step.imgPath}
-            alt={step.label}
-          />
-        ) : null}
-      </div>
-    ))}
-  </AutoPlaySwipeableViews>
-  <MobileStepper
-    sx={{ backgroundColor: "#daffd5" }}
-    steps={maxSteps}
-    position="static"
-    activeStep={activeStep}
-    nextButton={
-      <Button
-        size="small"
-        onClick={handleNext}
-        disabled={activeStep === maxSteps - 1}
+    <>
+      <Box sx={{ display: "flex", justifyContent: "center" }} pt={4}>
+        <Text sx={{ fontSize: { sm: "30px", xs: "15px" } }}>
+          Is Counselling For Me?
+        </Text>
+      </Box>
+      <Grid
+        container
+        spacing={2}
+        pt={{ xs: 0, sm: 4, md: 4 }}
+        pl={{ xs: 0, sm: 12, md: 12 }}
+        pr={{ xs: 0, sm: 12, md: 12 }}
+        pb={{ xs: 0, sm: 0, md: 0 }}
+        sx={{ display: "flex", justifyContent: "center" }}
       >
-        {theme.direction === 'rtl' ? (
-          <>
-          <KeyboardArrowLeft />
-          <KeyboardArrowLeft />
-          </>
-        ) : (
-          <>
-          <KeyboardArrowRight />
-          <KeyboardArrowRight />
-          </>
-        )}
-      </Button>
-    }
-    backButton={
-      <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
-        {theme.direction === 'rtl' ? (
-          <>
-          <KeyboardArrowRight />
-          <KeyboardArrowRight />
-          </>
-        ) : (
-          <>
-          <KeyboardArrowLeft />
-          <KeyboardArrowLeft />
-          </>
-        )}
-      </Button>
-    }
-  />
-</Box>
+        <Grid
+          item
+          xs={4}
+          sx={{ display: { sm: "flex", xs: "none" }, justifyContent: "center" }}
+        >
+          <BoxPurple>
+            <Text>WHAT IS COUNSELLING?</Text>
+          </BoxPurple>
+        </Grid>
 
-    </MainText>
-</BoxGreenMain>
-</Grid>
+        <Grid
+          item
+          xs={12}
+          sx={{
+            display: { sm: "none", xs: "flex" },
+            justifyContent: "center",
+            flexDirection: "row",
+          }}
+          mt={4}
+          mr={3}
+          ml={3}
+        >
+          <BoxGreenMain sx={{ padding: "10px 10px 10px 10px" }}>
+            <MainText sx={{ fontSize: { xs: "12px", sm: "16px" } }}>
+              <Text sx={{ fontSize: "10px" }}>WHAT IS COUNSELLING?</Text>
+              <hr></hr>
+              <p>
+                Counselling is about offering a listening ear to someone in need
+                of emotional support. The role of a counsellor is to sit
+                alongside you and help you set your own goals to overcome the
+                challenges you are experiencing.
+              </p>
+              <p>
+                As psychologist Gerard Egan points out: “Helpers are effective
+                to the degree that clients, through the helping process, learn
+                how to help themselves more effectively.”{" "}
+              </p>
+              <p>
+                This is just another way of saying that counselling is a
+                collaborative process where we work out the best way forward for
+                you. It’s a supportive partnership.{" "}
+              </p>
+            </MainText>
+          </BoxGreenMain>
+        </Grid>
 
-<Grid item xs={12} sx={{ display: { sm: "none", xs: "flex"}, justifyContent: "center", flexDirection: "row" }}  mr={3} ml={3}>
-<BoxGreenMain sx={{ padding: "10px 10px 10px 10px" }}>
+        <Grid
+          item
+          xs={8}
+          sx={{ display: { sm: "flex", xs: "none" }, justifyContent: "center" }}
+        >
+          <BoxGreenMain
+            sx={{ padding: { xs: "0px 10px 0px 0px", sm: "10px 25px" } }}
+          >
+            <MainText sx={{ fontSize: { xs: "12px", sm: "16px" } }}>
+              <p>
+                Counselling is about offering a listening ear to someone in need
+                of emotional support. The role of a counsellor is to sit
+                alongside you and help you set your own goals to overcome the
+                challenges you are experiencing.
+              </p>
+              <p>
+                As psychologist Gerard Egan points out: “Helpers are effective
+                to the degree that clients, through the helping process, learn
+                how to help themselves more effectively.”{" "}
+              </p>
+              <p>
+                This is just another way of saying that counselling is a
+                collaborative process where we work out the best way forward for
+                you. It’s a supportive partnership.{" "}
+              </p>
+            </MainText>
+          </BoxGreenMain>
+        </Grid>
+      </Grid>
 
-  <MainText sx={{ fontSize: { xs: "12px", sm: "16px" }}}>
+      <Grid
+        container
+        spacing={0}
+        pt={{ xs: 3, sm: 6 }}
+        pl={{ xs: 0, sm: 12 }}
+        pr={{ xs: 0, sm: 12 }}
+        pb={{ xs: 0, sm: 6 }}
+        sx={{ display: "flex", justifyContent: "center" }}
+      >
+        <Grid
+          item
+          xs={8}
+          sx={{ display: { sm: "flex", xs: "none" }, justifyContent: "center" }}
+        >
+          <BoxPurpleMain
+            sx={{ padding: { xs: "0px 0px 0px 10px", sm: "10px 25px" } }}
+          >
+            <MainText sx={{ fontSize: { xs: "12px", sm: "16px" } }}>
+              <p>
+                At Nicola Kirk Counselling in Glasgow City Centre and Clarkson,
+                we will meet in a safe and calm private counselling room. If you
+                prefer online or telephone counselling, I offer those services
+                too.
+              </p>
+              <p>
+                I aim to create a caring, confidential and non-judgemental space
+                for clients. My approach is to see the whole person and their
+                potential, rather than focusing on specific behaviours or
+                traits. In our sessions together, I’ll follow your lead and
+                explore whatever you want to look at that day.
+              </p>
+              <p>
+                My goal is to build a trusting therapeutic relationship where
+                you can talk about your feelings openly and explore any areas
+                you want to work on. This way, you can find your own solutions
+                to issues that you’re facing and feel empowered to move forward.
+              </p>
+              <p>
+                To find out more, please book a free introductory call with me.
+              </p>
+            </MainText>
+          </BoxPurpleMain>
+        </Grid>
 
-  <Text sx={{ fontSize: "10px"}}>WHERE WILL WE MEET?</Text>
-<hr></hr>
-<p>I offer sessions online or in person at the <a href="https://www.thegreenbankrooms.co.uk/" target="_blank" rel="noreferrer">Greenbank Rooms</a> in Clarkston, or in St. Enoch Square in the City Centre.</p>
+        <Grid
+          item
+          xs={12}
+          sx={{
+            display: { sm: "none", xs: "flex" },
+            justifyContent: "center",
+            flexDirection: "row",
+          }}
+          mt={0}
+          mr={3}
+          ml={3}
+        >
+          <BoxPurpleMain sx={{ padding: "10px 10px 10px 10px" }}>
+            <MainText sx={{ fontSize: { xs: "12px", sm: "16px" } }}>
+              <Text sx={{ fontSize: "10px" }}>WHAT HAPPENS IN A SESSION?</Text>
+              <hr></hr>
+              <p>
+                At Nicola Kirk Counselling in Glasgow City Centre and Clarkson,
+                we will meet in a safe and calm private counselling room. If you
+                prefer online or telephone counselling, I offer those services
+                too.
+              </p>
+              <p>
+                I aim to create a caring, confidential and non-judgemental space
+                for clients. My approach is to see the whole person and their
+                potential, rather than focusing on specific behaviours or
+                traits. In our sessions together, I’ll follow your lead and
+                explore whatever you want to look at that day.
+              </p>
+              <p>
+                My goal is to build a trusting therapeutic relationship where
+                you can talk about your feelings openly and explore any areas
+                you want to work on. This way, you can find your own solutions
+                to issues that you’re facing and feel empowered to move forward.
+              </p>
+              <p>
+                To find out more, please book a free introductory call with me.
+              </p>
+            </MainText>
+          </BoxPurpleMain>
+        </Grid>
 
-{/* <Box sx={{ display: "flex", justifyContent: "center"}} pb={2}>
+        <Grid
+          item
+          xs={4}
+          sx={{ display: { sm: "flex", xs: "none" }, justifyContent: "center" }}
+          pl={2}
+        >
+          <BoxGreen>
+            <Text sx={{ fontSize: "15px" }}>WHAT HAPPENS IN A SESSION?</Text>
+          </BoxGreen>
+        </Grid>
+      </Grid>
+
+      <Grid
+        container
+        spacing={2}
+        pt={{ xs: 3, sm: 0 }}
+        pl={{ xs: 0, sm: 12 }}
+        pr={{ xs: 0, sm: 12 }}
+        pb={{ xs: 0, sm: 0 }}
+        sx={{ display: "flex", justifyContent: "center" }}
+      >
+        <Grid
+          item
+          xs={4}
+          sx={{ display: { sm: "flex", xs: "none" }, justifyContent: "center" }}
+        >
+          <BoxPurple>
+            <Text sx={{ fontSize: "15px" }}>WHERE WILL WE MEET?</Text>
+          </BoxPurple>
+        </Grid>
+
+        <Grid
+          item
+          xs={8}
+          sx={{ display: { sm: "flex", xs: "none" }, justifyContent: "center" }}
+        >
+          <BoxGreenMain
+            sx={{ padding: { xs: "0px 10px 0px 0px", sm: "10px 25px" } }}
+          >
+            <MainText sx={{ fontSize: { xs: "12px", sm: "16px" } }}>
+              <p>
+                I offer sessions online or in person at the{" "}
+                <a
+                  href="https://www.thegreenbankrooms.co.uk/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Greenbank Rooms
+                </a>{" "}
+                in Clarkston, or in St. Enoch Square in the City Centre.
+              </p>
+
+              <Box sx={{ maxWidth: 700, flexGrow: 1 }}>
+                <Paper
+                  square
+                  elevation={0}
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    height: 50,
+                    pl: 0,
+                    bgcolor: "#abb8b5",
+                  }}
+                >
+                  <Text>
+                    {images[activeStep].label}
+                  </Text>
+                </Paper>
+                <AutoPlaySwipeableViews
+                  axis={theme.direction === "rtl" ? "x-reverse" : "x"}
+                  index={activeStep}
+                  onChangeIndex={handleStepChange}
+                  enableMouseEvents
+                >
+                  {images.map((step, index) => (
+                    <div key={step.label}>
+                      {Math.abs(activeStep - index) <= 2 ? (
+                        <Box
+                          component="img"
+                          sx={{
+                            height: "355px",
+                            display: "block",
+                            maxWidth: "100%",
+                            overflow: "hidden",
+                            width: "100%",
+                            objectFit: "contain", // Ensures the image is contained within the box
+                          }}
+                          src={step.imgPath}
+                          alt={step.label}
+                        />
+                      ) : null}
+                    </div>
+                  ))}
+                </AutoPlaySwipeableViews>
+                <MobileStepper
+                  sx={{ backgroundColor: "#abb8b5" }}
+                  steps={maxSteps}
+                  position="static"
+                  activeStep={activeStep}
+                  nextButton={
+                    <Button
+                      size="small"
+                      onClick={handleNext}
+                      disabled={activeStep === maxSteps - 1}
+                    >
+                      {theme.direction === "rtl" ? (
+                        <>
+                          <KeyboardArrowLeft />
+                          <KeyboardArrowLeft />
+                        </>
+                      ) : (
+                        <>
+                          <KeyboardArrowRight />
+                          <KeyboardArrowRight />
+                        </>
+                      )}
+                    </Button>
+                  }
+                  backButton={
+                    <Button
+                      size="small"
+                      onClick={handleBack}
+                      disabled={activeStep === 0}
+                    >
+                      {theme.direction === "rtl" ? (
+                        <>
+                          <KeyboardArrowRight />
+                          <KeyboardArrowRight />
+                        </>
+                      ) : (
+                        <>
+                          <KeyboardArrowLeft />
+                          <KeyboardArrowLeft />
+                        </>
+                      )}
+                    </Button>
+                  }
+                />
+              </Box>
+            </MainText>
+          </BoxGreenMain>
+        </Grid>
+
+        <Grid
+          item
+          xs={12}
+          sx={{
+            display: { sm: "none", xs: "flex" },
+            justifyContent: "center",
+            flexDirection: "row",
+          }}
+          mr={3}
+          ml={3}
+        >
+          <BoxGreenMain sx={{ padding: "10px 10px 10px 10px" }}>
+            <MainText sx={{ fontSize: { xs: "12px", sm: "16px" } }}>
+              <Text sx={{ fontSize: "10px" }}>WHERE WILL WE MEET?</Text>
+              <hr></hr>
+              <p>
+                I offer sessions online or in person at the{" "}
+                <a
+                  href="https://www.thegreenbankrooms.co.uk/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Greenbank Rooms
+                </a>{" "}
+                in Clarkston, or in St. Enoch Square in the City Centre.
+              </p>
+
+              {/* <Box sx={{ display: "flex", justifyContent: "center"}} pb={2}>
 <img width="300px" height="200px" src="../greenbank.png" alt="Greenbank Rooms"></img>
 </Box> */}
 
-<Box sx={{ maxWidth: 400, flexGrow: 1 }}>
-  <Paper
-    square
-    elevation={0}
-    sx={{
-      display: 'flex',
-      alignItems: 'center',
-      height: 50,
-      pl: 0,
-      bgcolor: '#daffd5',
-    }}
-  >
-    <Typography sx={{ fontFamily: "Kalam", fontSize: "14px" }}>{images[activeStep].label}</Typography>
-  </Paper>
-  <AutoPlaySwipeableViews
-    axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
-    index={activeStep}
-    onChangeIndex={handleStepChange}
-    enableMouseEvents
-  >
-    {images.map((step, index) => (
-      <div key={step.label}>
-        {Math.abs(activeStep - index) <= 2 ? (
-          <Box
-            component="img"
-            sx={{
-              height: '355px',
-              display: 'block',
-              maxWidth: '100%',
-              overflow: 'hidden',
-              width: '100%',
-              objectFit: 'contain', // Ensures the image is contained within the box
-            }}
-            src={step.imgPath}
-            alt={step.label}
-          />
-        ) : null}
-      </div>
-    ))}
-  </AutoPlaySwipeableViews>
-  <MobileStepper
-    sx={{ backgroundColor: "#daffd5" }}
-    steps={maxSteps}
-    position="static"
-    activeStep={activeStep}
-    nextButton={
-      <Button
-        size="small"
-        onClick={handleNext}
-        disabled={activeStep === maxSteps - 1}
+              <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
+                <Paper
+                  square
+                  elevation={0}
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    height: 50,
+                    pl: 0,
+                    bgcolor: "#abb8b5",
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      fontFamily: "PlayfairDisplayVariable",
+                      fontVariationSettings: '"wght" 500',
+                      fontWeight: 500,
+                      fontSize: "14px",
+                    }}
+                  >
+                    {images[activeStep].label}
+                  </Typography>
+                </Paper>
+                <AutoPlaySwipeableViews
+                  axis={theme.direction === "rtl" ? "x-reverse" : "x"}
+                  index={activeStep}
+                  onChangeIndex={handleStepChange}
+                  enableMouseEvents
+                >
+                  {images.map((step, index) => (
+                    <div key={step.label}>
+                      {Math.abs(activeStep - index) <= 2 ? (
+                        <Box
+                          component="img"
+                          sx={{
+                            height: "355px",
+                            display: "block",
+                            maxWidth: "100%",
+                            overflow: "hidden",
+                            width: "100%",
+                            objectFit: "contain", // Ensures the image is contained within the box
+                          }}
+                          src={step.imgPath}
+                          alt={step.label}
+                        />
+                      ) : null}
+                    </div>
+                  ))}
+                </AutoPlaySwipeableViews>
+                <MobileStepper
+                  sx={{ backgroundColor: "#abb8b5" }}
+                  steps={maxSteps}
+                  position="static"
+                  activeStep={activeStep}
+                  nextButton={
+                    <Button
+                      size="small"
+                      onClick={handleNext}
+                      disabled={activeStep === maxSteps - 1}
+                    >
+                      {theme.direction === "rtl" ? (
+                        <>
+                          <KeyboardArrowLeft />
+                          <KeyboardArrowLeft />
+                        </>
+                      ) : (
+                        <>
+                          <KeyboardArrowRight />
+                          <KeyboardArrowRight />
+                        </>
+                      )}
+                    </Button>
+                  }
+                  backButton={
+                    <Button
+                      size="small"
+                      onClick={handleBack}
+                      disabled={activeStep === 0}
+                    >
+                      {theme.direction === "rtl" ? (
+                        <>
+                          <KeyboardArrowRight />
+                          <KeyboardArrowRight />
+                        </>
+                      ) : (
+                        <>
+                          <KeyboardArrowLeft />
+                          <KeyboardArrowLeft />
+                        </>
+                      )}
+                    </Button>
+                  }
+                />
+              </Box>
+            </MainText>
+          </BoxGreenMain>
+        </Grid>
+      </Grid>
+
+      <Grid
+        container
+        spacing={0}
+        pt={{ xs: 3, sm: 6 }}
+        pl={{ xs: 0, sm: 12 }}
+        pr={{ xs: 0, sm: 12 }}
+        pb={{ xs: 6, sm: 6 }}
+        sx={{ display: "flex", justifyContent: "center" }}
       >
-        {theme.direction === 'rtl' ? (
-          <>
-          <KeyboardArrowLeft />
-          <KeyboardArrowLeft />
-          </>
-        ) : (
-          <>
-          <KeyboardArrowRight />
-          <KeyboardArrowRight />
-          </>
-        )}
-      </Button>
-    }
-    backButton={
-      <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
-        {theme.direction === 'rtl' ? (
-          <>
-          <KeyboardArrowRight />
-          <KeyboardArrowRight />
-          </>
-        ) : (
-          <>
-          <KeyboardArrowLeft />
-          <KeyboardArrowLeft />
-          </>
-        )}
-      </Button>
-    }
-  />
-</Box>
-    </MainText>
-</BoxGreenMain>
-</Grid>
+        <Grid
+          item
+          xs={8}
+          sx={{ display: { sm: "flex", xs: "none" }, justifyContent: "center" }}
+        >
+          <BoxPurpleMain sx={{ padding: "10px 10px 10px 20px" }}>
+            <MainText sx={{ fontSize: { xs: "12px", sm: "16px" } }}>
+              <p>
+                I am a qualified counsellor and I work within the BACP’s ethical
+                framework, which can be found{" "}
+                <a href="https://www.bacp.co.uk/events-and-resources/ethics-and-standards/ethical-framework-for-the-counselling-professions/">
+                  here.
+                </a>
+              </p>
+              <p>
+                To learn more about what therapy can help with,{" "}
+                <a href="https://www.bacp.co.uk/about-therapy/what-therapy-can-help-with/">
+                  click here
+                </a>
+                .
+              </p>
+              <p>
+                To learn more about different types of therapy available,{" "}
+                <a href="https://www.bacp.co.uk/about-therapy/types-of-therapy/">
+                  click here
+                </a>
+                .
+              </p>
+            </MainText>
+          </BoxPurpleMain>
+        </Grid>
 
-</Grid>
+        <Grid
+          item
+          xs={12}
+          sx={{
+            display: { sm: "none", xs: "flex" },
+            justifyContent: "center",
+            flexDirection: "row",
+          }}
+          mt={0}
+          mr={3}
+          ml={3}
+        >
+          <BoxPurpleMain sx={{ padding: "10px 10px 10px 10px" }}>
+            <MainText sx={{ fontSize: { xs: "12px", sm: "16px" } }}>
+              <Text sx={{ fontSize: "10px" }}>LEARN MORE?</Text>
+              <hr></hr>
+              <p>
+                I am a qualified counsellor and I work within the BACP’s ethical
+                framework, which can be found{" "}
+                <a href="https://www.bacp.co.uk/events-and-resources/ethics-and-standards/ethical-framework-for-the-counselling-professions/">
+                  here.
+                </a>
+              </p>
+              <p>
+                To learn more about what therapy can help with,{" "}
+                <a href="https://www.bacp.co.uk/about-therapy/what-therapy-can-help-with/">
+                  click here
+                </a>
+                .
+              </p>
+              <p>
+                To learn more about different types of therapy available,{" "}
+                <a href="https://www.bacp.co.uk/about-therapy/types-of-therapy/">
+                  click here
+                </a>
+                .
+              </p>
+            </MainText>
+          </BoxPurpleMain>
+        </Grid>
 
-<Grid container spacing={0} 
-pt={{ xs: 3, sm: 6 }} pl={{ xs: 0, sm: 12 }} pr={{ xs: 0, sm: 12 }} pb={{ xs: 6, sm: 6 }}
-sx={{ display: "flex", justifyContent: "center"}}>
-
-<Grid item xs={8} sx={{ display: { sm: "flex", xs: "none"}, justifyContent: "center"}}>
-<BoxPurpleMain sx={{ padding: "10px 10px 10px 20px" }}>
-<MainText sx={{ fontSize: { xs: "12px", sm: "16px" }}}>
-    <p>I am a qualified counsellor and I work within the BACP’s ethical framework, which can be found <a href="https://www.bacp.co.uk/events-and-resources/ethics-and-standards/ethical-framework-for-the-counselling-professions/">here.</a></p>
-    <p>
-     To learn more about what therapy can help with, <a href="https://www.bacp.co.uk/about-therapy/what-therapy-can-help-with/">click here</a>.</p>
-     <p>
-     To learn more about different types of therapy available, <a href="https://www.bacp.co.uk/about-therapy/types-of-therapy/">click here</a>.</p>
-
-    </MainText>
-
-</BoxPurpleMain>
-</Grid>
-
-
-<Grid item xs={12} sx={{ display: { sm: "none", xs: "flex"}, justifyContent: "center", flexDirection: "row" }} mt={0} mr={3} ml={3}>
-<BoxPurpleMain sx={{ padding: "10px 10px 10px 10px" }}>
-<MainText sx={{ fontSize: { xs: "12px", sm: "16px" }}}>
-
-<Text sx={{ fontSize: "10px"}}>LEARN MORE?</Text>
-<hr></hr>
-<p>I am a qualified counsellor and I work within the BACP’s ethical framework, which can be found <a href="https://www.bacp.co.uk/events-and-resources/ethics-and-standards/ethical-framework-for-the-counselling-professions/">here.</a></p>
-    <p>
-     To learn more about what therapy can help with, <a href="https://www.bacp.co.uk/about-therapy/what-therapy-can-help-with/">click here</a>.</p>
-     <p>
-     To learn more about different types of therapy available, <a href="https://www.bacp.co.uk/about-therapy/types-of-therapy/">click here</a>.</p>
-    </MainText>
-</BoxPurpleMain>
-</Grid>
-
-<Grid item xs={4} sx={{ display: { sm: "flex", xs: "none"}, justifyContent: "center"}} pl={2}>
-<BoxGreen>
-<Text>LEARN MORE?</Text>
-</BoxGreen>
-
-</Grid>
-
-</Grid>
-</>
+        <Grid
+          item
+          xs={4}
+          sx={{ display: { sm: "flex", xs: "none" }, justifyContent: "center" }}
+          pl={2}
+        >
+          <BoxGreen>
+            <Text>LEARN MORE?</Text>
+          </BoxGreen>
+        </Grid>
+      </Grid>
+    </>
   );
 };
 
-
 export default Approach;
-
-
-
-
-

@@ -18,7 +18,7 @@ const Contact = () => {
       sx={{ 
         pl:{ sm: 8, xs: 1},
         pr:{ sm: 8, xs: 1},
-        backgroundColor: "#daffd5",
+        backgroundColor: "#eadfe9",
         borderRadius: "15px",
         display: "flex",
         flexDirection: "column"
@@ -42,19 +42,8 @@ const Contact = () => {
     
       </MainText>
 
-      <Box sx={{ display: { xs: "none", sm: "flex" }, justifyContent: "center", mr: 1, pt:4 }} >
-          <img 
-              src="../../../greenlogo.jpg" alt="logo" width="400" height="400"
-          />
-          </Box>
 
-          <Box sx={{ display: { xs: "flex", sm: "none" }, justifyContent: "center", mr: 1, pt:4 }} >
-          <img 
-              src="../../../greenlogo.jpg" alt="logo" width="200" height="200"
-          />
-          </Box>
-
-        </Box>
+    </Box>
     </Box>
   );
 };
