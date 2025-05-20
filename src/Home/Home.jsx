@@ -30,15 +30,24 @@ const Home = () => {
           <Box>
 
           <MainText pb={2} sx={{ fontSize: { sm: "18px", xs: "15px" } }}>
-          <DropCap>H</DropCap>ave you reached a point where you realise things haven’t been right for a while? Do you feel stuck and you can’t see why? Perhaps your emotions feel in control of you and it feels scary. It can feel hard to reach out for help, but talking about this with someone removed from the situation can help you to gain a new perspective and more clarity.
+          <DropCap>H</DropCap>ave you been through difficult past experiences that affect you in the here and now? Do you feel overwhelmed? Perhaps you feel down, anxious or stressed about your current life situation? It can feel daunting to reach out for help when we feel this way, but talking about this with someone impartial can help you to gain a new perspective and more clarity of mind.
               </MainText>
               <MainText pb={2} sx={{ fontSize: { sm: "18px", xs: "15px" } }}>
-              I’m a Glasgow-based counsellor and can provide support for issues like anxiety and stress, low mood, loss and bereavement. 
+              I’m a Glasgow-based counsellor providing support for issues like trauma, anxiety and stress, low mood, loss and bereavement, among others.
                 </MainText>
                 </Box>
             <Box>
             <MainText pb={2} sx={{ fontSize: { sm: "18px", xs: "15px" } }}>
-            I have a trauma-informed practice, providing you with a neutral, confidential space to talk about whatever it is that is troubling you. I listen carefully and look at things from your perspective, without judging you. I believe that you are the expert on your own life and that you have an innate ability to grow and thrive. My role is to be alongside you, supporting you in finding the best path forward.   
+            When we have been through traumatic experiences it can be difficult to find a sense of safety in the world and within ourselves. If you can relate to this, then during our time together we will focus on increasing your sense of safety, primarily through the quality of our therapeutic relationship, which can be a steadying anchor in times of extreme stress, and also through developing a shared understanding of the nervous system and how it responds to stress.  
+              </MainText>
+
+              <MainText pb={2} sx={{ fontSize: { sm: "18px", xs: "15px" } }}>
+              We will look at ways of feeling more secure by working with the body and the nervous system, as well as the mind. One doesn’t exist without the other, and as Bessel van der Kolk, a key figure in trauma research, says:
+              </MainText>
+
+              <MainText pb={2} sx={{ fontSize: { sm: "18px", xs: "15px" } }}>
+              <blockquote><b>“In order to change, people need to become aware of their sensations and the way that their bodies interact with the world around them. Physical self-awareness is the first step in releasing the tyranny of the past.” </b>
+                </blockquote>
               </MainText>
 
               <Text sx={{ display: { xs: "none" }, fontSize: { sm: "20px", xs: "15px" }}} pt={2} pb={2}>
@@ -47,7 +56,7 @@ const Home = () => {
 
 
               <MainText pb={2} sx={{ fontSize: { sm: "18px", xs: "15px" } }}>
-              I understand that speaking to a stranger might feel daunting at first, but I offer caring support and a non-judgmental perspective, no matter what you’re facing. 
+              I have a special interest in trauma and have a trauma-informed practice, providing you with a confidential, non-judgemental space to explore whatever is troubling you. I listen carefully and aim to see things from your perspective. I believe that you are the expert on your own life and that you have an innate ability to grow and thrive, even though this may be hard for you to see at the moment. My role is to be alongside you, collaborating with you to find the best path forward to whatever it is that you wish to achieve through counselling.
               </MainText>
 
               <Text sx={{ fontSize: { sm: "20px", xs: "15px" }}} pb={2} pt={2}>
@@ -76,7 +85,7 @@ const Home = () => {
               <li>Certificate in Online and Telephone Counselling (ACTO recognised)</li>
               <li>ASIST (Applied Suicide Intervention Skills Training)</li>
               <li>Emotion-Focused Therapy (EFT) Level 1 Advanced Professional Training </li>
-              <li>I am currently studying towards a Diploma in Therapeutic Safety in Trauma</li>
+              <li>Foundation Diploma in Therapeutic Safety in Trauma (NCPS checked)</li>
 
               </ul>
               </MainText>

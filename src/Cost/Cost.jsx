@@ -46,7 +46,7 @@ const Cost = () => {
           </MainText>
 
           <MainText sx={{ fontSize: { xs: "12px", sm: "16px" } }}>
-            <p>I charge a fee of £45 per fifty-minute counselling session.</p>
+            <p>I charge a fee of £50 per fifty-minute counselling session.</p>
           </MainText>
 
           <MainText
