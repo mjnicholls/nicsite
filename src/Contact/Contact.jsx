@@ -30,15 +30,9 @@ const Contact = () => {
     
       </MainText>
 
-      <MainText sx={{ fontSize: { xs: "12px", sm: "22px" } }} pt={3}>
+      <MainText sx={{ fontSize: { xs: "12px", sm: "22px" } }} pt={6}>
             
             Alternatively, call or send a text to 0746 834 5451
-    
-      </MainText>
-
-      <MainText sx={{ fontSize: { xs: "12px", sm: "22px" } }} pt={3}>
-            
-            You can also book an appointment through <a href="https://www.counselling-directory.org.uk/counsellors/nicola-kirk" target="_blank" rel="noreferrer" >Counselling Directory</a> or <a href="https://www.bacp.co.uk/therapists/402784/nicola-kirk/glasgow-g2">BACP Directory</a>
     
       </MainText>
 
