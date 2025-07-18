@@ -60,10 +60,6 @@ I am registered with the Information Commissioner’s Office [Registration numbe
 </MainText>
 
 <MainText sx={{ fontSize: { xs: "12px", sm: "16px" } }}>
-  Address: Operating from The Greenbank Rooms, The Loft (5, Central Buildings, 72 Busby Rd, Clarkston, Glasgow G76 7AU)
-</MainText>
-
-<MainText sx={{ fontSize: { xs: "12px", sm: "16px" } }}>
   Web Address: www.nicolakirkcounselling.co.uk
 </MainText>
 

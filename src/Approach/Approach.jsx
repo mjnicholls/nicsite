@@ -17,10 +17,6 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: "↓ The Greenbank Rooms, Clarkston",
-    imgPath: "../greenbank.png",
-  },
-  {
     label: "↓ St. Enoch Square, City Centre",
     imgPath: "../walden.png",
   },
@@ -154,7 +150,7 @@ const Approach = () => {
           >
             <MainText sx={{ fontSize: { xs: "12px", sm: "16px" } }}>
               <p>
-                At Nicola Kirk Counselling in Glasgow City Centre and Clarkson,
+                At Nicola Kirk Counselling in Glasgow City Centre,
                 we will meet in a safe and calm private counselling room. If you
                 prefer online or telephone counselling, I offer those services
                 too.
@@ -196,7 +192,7 @@ const Approach = () => {
               <Text sx={{ fontSize: "10px" }}>WHAT HAPPENS IN A SESSION?</Text>
               <hr></hr>
               <p>
-                At Nicola Kirk Counselling in Glasgow City Centre and Clarkson,
+                At Nicola Kirk Counselling in Glasgow City Centre,
                 we will meet in a safe and calm private counselling room. If you
                 prefer online or telephone counselling, I offer those services
                 too.
@@ -262,15 +258,7 @@ const Approach = () => {
           >
             <MainText sx={{ fontSize: { xs: "12px", sm: "16px" } }}>
               <p>
-                I offer sessions online or in person at the{" "}
-                <a
-                  href="https://www.thegreenbankrooms.co.uk/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Greenbank Rooms
-                </a>{" "}
-                in Clarkston, or in St. Enoch Square in the City Centre.
+                I offer sessions online or in St. Enoch Square in the City Centre.
               </p>
 
               <Box sx={{ maxWidth: 700, flexGrow: 1 }}>
@@ -380,15 +368,7 @@ const Approach = () => {
               <Text sx={{ fontSize: "10px" }}>WHERE WILL WE MEET?</Text>
               <hr></hr>
               <p>
-                I offer sessions online or in person at the{" "}
-                <a
-                  href="https://www.thegreenbankrooms.co.uk/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Greenbank Rooms
-                </a>{" "}
-                in Clarkston, or in St. Enoch Square in the City Centre.
+                I offer sessions online or in St. Enoch Square in the City Centre.
               </p>
 
               {/* <Box sx={{ display: "flex", justifyContent: "center"}} pb={2}>
