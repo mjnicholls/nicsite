@@ -24,9 +24,14 @@ const Contact = () => {
         flexDirection: "column"
         }}>
 
+      <MainText pb={4} sx={{ fontSize: { xs: "20px", sm: "30px" } }}>
+            
+        <b>I am not currently accepting new clients.</b>
+    
+      </MainText>
       <MainText sx={{ fontSize: { xs: "12px", sm: "22px" } }}>
             
-            To book a session or make an enquiry, email me at <a href="mailto:nicolakirkcounselling@proton.me">nicolakirkcounselling@proton.me</a>
+            To  make an enquiry, email me at <a href="mailto:nicolakirkcounselling@proton.me">nicolakirkcounselling@proton.me</a>
     
       </MainText>
 
