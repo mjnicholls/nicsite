@@ -15,7 +15,7 @@ const Home = () => {
 
   return (
     <>
-      <Box sx={{ p: { sm: 8, xs: 2 }}} pt={4}>
+      {/* <Box sx={{ p: { sm: 8, xs: 2 }}} pt={4}>
         <Grid container sx={{ backgroundColor: "#eadfe9", borderRadius: "15px", p: { xs: 2, sm: 4} }}>
           <Grid item sm={4} sx={{ display: { xs: "none", sm: "flex" }, alignItems: "top", justifyContent: "center"}}>
             <Box>
@@ -110,7 +110,7 @@ const Home = () => {
             </Box>
           </Grid>
         </Grid>
-      </Box>
+      </Box> */}
     </>
   );
 };

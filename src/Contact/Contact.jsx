@@ -9,7 +9,7 @@ const Contact = () => {
 
     <Box sx={{ pl: { sm: 12, xs: 3}, pr: { sm: 12, xs: 2}, pb: { sm: 4, xs: 20 }} }>
 
-
+{/* 
 <Box sx={{ display: "flex", justifyContent: "center", pb: { sm: 4, xs: 2} }} pt={4}>
         <Text sx={{ fontSize: { sm: "30px", xs: "15px" } }}>Book a Session</Text>
 </Box>
@@ -42,7 +42,7 @@ const Contact = () => {
       </MainText>
 
 
-    </Box>
+    </Box> */}
     </Box>
   );
 };

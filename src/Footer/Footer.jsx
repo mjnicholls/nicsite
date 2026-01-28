@@ -21,9 +21,9 @@ const Footer = () => {
 
   return (
 
-      // <Grid container spacing={2}>
-       <Box sx={{ backgroundColor: "#eadfe9"}} p={2}>
-        <Grid container sx={{ display: "flex", alignItems:"center" }}>
+      <>
+       {/* <Box sx={{ backgroundColor: "#eadfe9"}} p={2}> */}
+        {/* <Grid container sx={{ display: "flex", alignItems:"center" }}>
           <Grid item xs={4} sx={{ display: { sm: "flex", xs: "none" }, justifyContent: "center"}}>
           <Box sx={{ pr: 3 }}>
           <img width="200px" height="100px" alt="bacp logo" src="../../../BacpLogo.png" />
@@ -61,9 +61,9 @@ const Footer = () => {
             </TextUnderline>
             </Box>
           </Grid>
-        </Grid>
-       </Box>
-      // </Grid>
+        </Grid> */}
+       {/* </Box> */}
+     </>
 
   );
 };

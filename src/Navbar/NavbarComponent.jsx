@@ -55,7 +55,7 @@ const Navbar = (props) => {
 
   return (
     <>
-      <AppBar
+      {/* <AppBar
         position="static"
         sx={{ boxShadow: "none", marginTop: "15px", backgroundColor: "white" }}
       >
@@ -86,11 +86,11 @@ const Navbar = (props) => {
       height: "155px",
       objectFit: "cover",     // ensures fill
     }}
-  />
+  /> */}
 
 
-            </Box>
-            <Box sx={{  display: { xs: "none", sm: "flex" }, ml: 12, backgroundColor: "#eadfe9" }}>
+            {/* </Box> */}
+            {/* <Box sx={{  display: { xs: "none", sm: "flex" }, ml: 12, backgroundColor: "#eadfe9" }}>
             {pages.map((page) => (
               <ButtonNav
                 key={page}
@@ -110,7 +110,7 @@ const Navbar = (props) => {
                 flexDirection: "column",
                 alignItems: "center",
               }}
-            >
+            > */}
               {/* <HeaderText
                 variant="h6"
                 noWrap
@@ -130,9 +130,9 @@ const Navbar = (props) => {
               >
                 Glasgow City Centre, Clarkston, and Online
               </HeaderText> */}
-            </Box>
+            {/* </Box> */}
 
-            <Box sx={{ flexGrow: 1, display: { xs: "flex", sm: "none" } }}>
+            {/* <Box sx={{ flexGrow: 1, display: { xs: "flex", sm: "none" } }}>
               <IconButton
                 size="large"
                 aria-label="account of current user"
@@ -184,12 +184,12 @@ const Navbar = (props) => {
                 mr: 1,
                 cursor: "pointer",
               }}
-            >
+            > */}
               {/* <img 
             src="../../../greenlogo.jpg" alt="logo" width="125px" height="125px"
           /> */}
-            </Box>
-            <Box
+            {/* </Box> */}
+            {/* <Box
               sx={{
                 display: { xs: "flex", sm: "none" },
                 alignItems: "center",
@@ -246,7 +246,7 @@ const Navbar = (props) => {
               justifyContent: "center",
               pt: 2,
             }}
-          >
+          > */}
             {/* {pages.map((page) => (
               <ButtonNav
                 key={page}
@@ -259,10 +259,10 @@ const Navbar = (props) => {
                 </ListText>
               </ButtonNav>
             ))} */}
-          </Box>
+          {/* </Box>
         </Container>
       </AppBar>
-      <hr style={{ width: "200px", margin: "auto", marginTop: "15px" }} />
+      <hr style={{ width: "200px", margin: "auto", marginTop: "15px" }} /> */}
     </>
   );
 };
